@@ -5,6 +5,9 @@ function AdminHomePage() {
     return (
         <div>
             <h2>Admin Dashboard</h2>
+            <button>
+                Creat Auction
+            </button>
         </div>
     )
 }

@@ -1,11 +1,79 @@
-import React from 'react'
+import React from "react";
+import { Formik } from "formik";
+import * as Yup from "yup";
+import './ValidatedLoginForm.css'
+import {Link} from 'react-router-dom'
+import Popup from "reactjs-popup";
 
-function PasswordReset() {
-    return (
-        <div>
+
+
+const ValidatedLoginForm = () => (
+  <Formik
+    initialValues={{ email: "", password: "" }}
+    onSubmit={(values, { setSubmitting }) => {
+      setTimeout(() => {
+        console.log("Logging in", values);
+        setSubmitting(false);
+      }, 500);
+    }}
+    
+
+    validationSchema={Yup.object().shape({
+      email: Yup.string()
+        .email()
+        .required("Required"),
+      
+    })}
+  >
+      
+    {props => {
+      const {
+        values,
+        touched,
+        errors,
+        
+        handleChange,
+        handleBlur,
+        handleSubmit
+      } = props;
+
+      
+      return (
+
+        
+        <form onSubmit={handleSubmit}>
             <h2>Password Reset</h2>
-        </div>
-    )
-}
+          <label htmlFor="email">Email</label>
 
-export default PasswordReset;
+          <input
+            name="email"
+            type="text"
+            placeholder="Enter your email"
+            value={values.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            className={errors.email && touched.email && "error"}
+          />
+
+          {errors.email && touched.email && (
+            <div className="input-feedback">{errors.email}</div>
+          )}
+
+          
+        
+        
+        <Link
+        to='./Messagepopup'>
+          
+          <Popup trigger={<button> Reset Password</button>} position="right center">
+            <h3>The request has been sent</h3>
+        </Popup>
+        </Link>
+          
+        </form>
+      );
+    }}
+  </Formik>
+);
+
+export default ValidatedLoginForm;

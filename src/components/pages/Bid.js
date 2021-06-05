@@ -7,7 +7,7 @@ function bid(){
 
     return(
         <>
-           <xls/>
+           
         </>
     )
 

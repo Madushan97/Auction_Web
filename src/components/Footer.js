@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import { GetStartedButton } from './GetStartedButton';
 import { Link } from 'react-router-dom';
+import Subscribebutton from './Subscribebutton';
 
 function Footer() {
   return (
@@ -22,7 +22,9 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <GetStartedButton buttonStyle='btn--outline'>Subscribe</GetStartedButton>
+            <Link to='#'>
+            <Subscribebutton buttonStyle='btn--outline'>Subscribe</Subscribebutton>
+            </Link>
           </form>
         </div>
       </section>

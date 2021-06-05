@@ -14,6 +14,8 @@ import xls from './components/pages/xls'
 import LoginPortal from './components/Login/LoginPortal'
 import AdminHomePage from './components/Login/AdminHomePage'
 import ValidatedLoginForm from './components/Login/ValidatedLoginForm'
+import PasswordReset from './components/Login/PasswordReset'
+
 
 
 
@@ -48,11 +50,13 @@ function App() {
 
           <Route path='/LoginPortal' component={LoginPortal}/>
 
-          <Route path='AdminHomePage' component={AdminHomePage}/>
+          <Route path='/AdminHomePage' component={AdminHomePage}/>
 
-          <Route path='AdminHomePage' component={AdminHomePage}/>
+          <Route path='/PasswordReset' component={PasswordReset}/>
 
           <Route path='/ValidatedLoginForm' component={ValidatedLoginForm}/>
+
+          
           
      
         </Switch>
