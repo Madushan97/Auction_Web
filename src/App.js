@@ -13,8 +13,9 @@ import CreateAuction from './components/pages/CreateAuction'
 import CardDetails from './components/Auctiondetails/CardDetails'
 import xls from './components/pages/xls'
 import LoginPortal from './components/Login/LoginPortal'
-import LoginPage from './components/Login/Login'
+
 import AdminHomePage from './components/Login/AdminHomePage'
+import ValidatedLoginForm from './components/Login/ValidatedLoginForm'
 
 
 
@@ -51,9 +52,11 @@ function App() {
 
           <Route path='/LoginPortal' component={LoginPortal}/>
 
-          <Route path='/LoginPage' component={LoginPage}/>
+          
 
           <Route path='AdminHomePage' component={AdminHomePage}/>
+
+          <Route path='/ValidatedLoginForm' component={ValidatedLoginForm}/>
           
      
         </Switch>

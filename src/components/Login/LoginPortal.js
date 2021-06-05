@@ -36,7 +36,7 @@ export default function xls() {
                     <img src="images/img-10.png" alt="Avatar" class="image" />
                         <div class="middle">
                             <Link 
-                            to='./LoginPage'>
+                            to='./ValidatedLoginForm'>
                             <button  class='button' ><span>Admin</span></button>
                             </Link>
                         </div>
