@@ -4,7 +4,7 @@ import './AdminHomePage.css'
 function AdminHomePage() {
     return (
         <div>
-            <h2>Hi</h2>
+            <h2>Admin Dashboard</h2>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import './LoginPortal.css'
 import backgroundvideo from './video-2.mkv'
 import {Link} from 'react-router-dom'
+import ValidatedLoginForm from './ValidatedLoginForm'
 
 
 export default function xls() {

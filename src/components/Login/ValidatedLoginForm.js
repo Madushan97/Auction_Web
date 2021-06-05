@@ -3,6 +3,10 @@ import { Formik } from "formik";
 import * as EmailValidator from "email-validator";
 import * as Yup from "yup";
 import './ValidatedLoginForm.css'
+import {Link} from 'react-router-dom'
+
+
+
 const ValidatedLoginForm = () => (
   <Formik
     initialValues={{ email: "", password: "" }}
@@ -12,27 +16,7 @@ const ValidatedLoginForm = () => (
         setSubmitting(false);
       }, 500);
     }}
-    //********Handling validation messages yourself*******/
-    // validate={values => {
-    //   let errors = {};
-    //   if (!values.email) {
-    //     errors.email = "Required";
-    //   } else if (!EmailValidator.validate(values.email)) {
-    //     errors.email = "Invalid email address";
-    //   }
-
-    //   const passwordRegex = /(?=.*[0-9])/;
-    //   if (!values.password) {
-    //     errors.password = "Required";
-    //   } else if (values.password.length < 8) {
-    //     errors.password = "Password must be 8 characters long.";
-    //   } else if (!passwordRegex.test(values.password)) {
-    //     errors.password = "Invalida password. Must contain one number";
-    //   }
-
-    //   return errors;
-    // }}
-    //********Using Yum for validation********/
+    
 
     validationSchema={Yup.object().shape({
       email: Yup.string()
@@ -44,6 +28,7 @@ const ValidatedLoginForm = () => (
         .matches(/(?=.*[0-9])/, "Password must contain a number.")
     })}
   >
+      
     {props => {
       const {
         values,
@@ -54,9 +39,15 @@ const ValidatedLoginForm = () => (
         handleBlur,
         handleSubmit
       } = props;
+
+      
       return (
+
+        
         <form onSubmit={handleSubmit}>
+            <h2>Welcome to Admin Login</h2>
           <label htmlFor="email">Email</label>
+
           <input
             name="email"
             type="text"
@@ -66,10 +57,13 @@ const ValidatedLoginForm = () => (
             onBlur={handleBlur}
             className={errors.email && touched.email && "error"}
           />
+
           {errors.email && touched.email && (
             <div className="input-feedback">{errors.email}</div>
           )}
+
           <label htmlFor="email">Password</label>
+
           <input
             name="password"
             type="password"
@@ -79,12 +73,24 @@ const ValidatedLoginForm = () => (
             onBlur={handleBlur}
             className={errors.password && touched.password && "error"}
           />
+
           {errors.password && touched.password && (
             <div className="input-feedback">{errors.password}</div>
           )}
-          <button type="submit" disabled={isSubmitting}>
+        <Link
+        to='./AdminHomePage'>
+          <button  type="submit" disabled={isSubmitting}>
             Login
           </button>
+        </Link>
+        
+        <Link
+        to='./PasswordReset'>
+          <button type="submit" disabled={isSubmitting}>
+            Reset Paswword
+          </button>
+        </Link>
+          
         </form>
       );
     }}

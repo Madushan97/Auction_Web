@@ -7,13 +7,11 @@ import bid from './components/pages/Bid'
 import Sell from './components/pages/Sell'
 import Feedback from './components/Feedback'
 import Form from './components/signup/Form'
-
 import SignUpForm from './components/pages/Signup'
 import CreateAuction from './components/pages/CreateAuction'
 import CardDetails from './components/Auctiondetails/CardDetails'
 import xls from './components/pages/xls'
 import LoginPortal from './components/Login/LoginPortal'
-
 import AdminHomePage from './components/Login/AdminHomePage'
 import ValidatedLoginForm from './components/Login/ValidatedLoginForm'
 
@@ -39,9 +37,7 @@ function App() {
           <Route path='/Feedback' component={Feedback}/>
 
           <Route path='/Form' component={Form}/>
-
           
-
           <Route path='/SignUpForm' component={SignUpForm}/>
 
           <Route path='/CreateAuction' component={CreateAuction}/>
@@ -52,7 +48,7 @@ function App() {
 
           <Route path='/LoginPortal' component={LoginPortal}/>
 
-          
+          <Route path='AdminHomePage' component={AdminHomePage}/>
 
           <Route path='AdminHomePage' component={AdminHomePage}/>
 
