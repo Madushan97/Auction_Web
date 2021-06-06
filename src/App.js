@@ -15,9 +15,10 @@ import LoginPortal from './components/Login/LoginPortal'
 import AdminHomePage from './components/Login/AdminHomePage'
 import ValidatedLoginForm from './components/Login/ValidatedLoginForm'
 import PasswordReset from './components/Login/PasswordReset'
-
-
-
+import Auctionlist from './components/Auctions/Auctionlist'
+import Createauction from './components/Auctions/Createauction'
+import Createuser from './components/Auctions/Createuser'
+import Editauction from './components/Auctions/Editauction'
 
 function App() {
   return (
@@ -55,6 +56,14 @@ function App() {
           <Route path='/PasswordReset' component={PasswordReset}/>
 
           <Route path='/ValidatedLoginForm' component={ValidatedLoginForm}/>
+
+          <Route path='/Auctionlist' component={Auctionlist}/>
+
+          <Route path='/Createauction' component={Createauction}/>
+
+          <Route path='Createuser' component={Createuser}/>
+
+          <Route path='/Editauction' component={Editauction}/>
 
           
           
