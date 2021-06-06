@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import background from "./img-11.jpg";
 
 export default class EditExercise extends Component {
   constructor(props) {
@@ -23,6 +24,8 @@ export default class EditExercise extends Component {
   }
 
   componentDidMount() {
+    <div style={{ backgroundImage: `url(${background})` }}></div>
+
     axios.get('http://localhost:5000/exercises/'+this.props.match.params.id)
       .then(response => {
         this.setState({
@@ -103,18 +106,139 @@ export default class EditExercise extends Component {
   render() {
     return (
     <div>
-      <h3>Edit Exercise Log</h3>
+      <h2>Create Auction</h2>
       <form onSubmit={this.onSubmit}>
+
+{/* username */}
         <div className="form-group"> 
           <label>Username: </label>
-          
-          
           <input  type="text"
               required
               className="form-control"
               value={this.state.username}
               onChange={this.onChangeUsername}
               />
+
+{/* email */}
+        <div className="form-group"> 
+          <label>Email: </label>
+          <input  type="text"
+              required
+              className="form-control"
+              value={this.state.email}
+              onChange={this.onChangeEmail}
+              />
+        </div>
+
+{/* phone number */}
+        <div className="form-group"> 
+          <label>Phone: </label>
+          <input  type="text"
+              required
+              className="form-control"
+              value={this.state.phone}
+              onChange={this.onChangePhone}
+              />
+        </div>
+
+{/* address */}
+        <div className="form-group"> 
+          <label>Address: </label>
+          <input  type="text"
+              required
+              placeholder='Address Line 1'
+              className="form-control"
+              value={this.state.address1}
+              onChange={this.onChangeaddress1}
+              />
+        </div>
+
+{/* address line 2 */}
+        <div className="form-group"> 
+          <label> </label>
+          <input  type="text"
+              required
+              placeholder='Address Line 2'
+              className="form-control"
+              value={this.state.address}
+              onChange={this.onChangeaddress}
+              />
+        </div>
+
+{/* city */}
+        <div className="form-group"> 
+          <label> </label>
+          <input  type="text"
+              required
+              placeholder='City, State'
+              className="form-control"
+              value={this.state.city}
+              onChange={this.onChangecity}
+              />
+        </div>
+
+{/* zipcode */}
+
+        <div className="form-group"> 
+          <label>Zip code: </label>
+          <input  type="text"
+              required
+              placeholder='Zip Code'
+              className="form-control"
+              value={this.state.zipcode}
+              onChange={this.onChangezipcode}
+              />
+        </div>
+        <h2>Auction Item Information</h2>
+{/* name of the gem */}
+        <div className="form-group"> 
+          <label>Name of the Gem: </label>
+          <input  type="text"
+              required
+              className="form-control"
+              value={this.state.gemname}
+              onChange={this.onChangegemname}
+              />
+        </div>
+{/* Weight in carat */}
+        <div className="form-group"> 
+          <label>Weight(in carat): </label>
+          <input  type="text"
+              required
+              placeholder='(carat)'
+              className="form-control"
+              value={this.state.weight}
+              onChange={this.onChangeweight}
+              />
+        </div>
+{/* weight in ratti */}
+        <div className="form-group"> 
+          <label>Weight(in ratti): </label>
+          <input  type="text"
+              required
+              placeholder='(ratti)'
+              className="form-control"
+              value={this.state.weight1}
+              onChange={this.onChangeweight1}
+              />
+        </div>
+
+{/* estimate value */}
+        <div className="form-group"> 
+          <label>Start Price: </label>
+          <input  type="text"
+              required
+              placeholder='LKR'
+              className="form-control"
+              value={this.state.price}
+              onChange={this.onChangeprice}
+              />
+        </div>
+
+{/* Image */}
+    
+
+{/* description */}
         </div>
         <div className="form-group"> 
           <label>Description: </label>
@@ -126,19 +250,9 @@ export default class EditExercise extends Component {
               />
         </div>
 
-        <div className="form-group"> 
-          <label>Email: </label>
-          <input  type="text"
-              required
-              className="form-control"
-              value={this.state.email}
-              onChange={this.onChangeEmail}
-              />
-        </div>
-
-
+{/* duration */}
         <div className="form-group">
-          <label>Duration (in minutes): </label>
+          <label>Duration (in hours): </label>
           <input 
               type="text" 
               className="form-control"
@@ -146,6 +260,8 @@ export default class EditExercise extends Component {
               onChange={this.onChangeDuration}
               />
         </div>
+
+{/* date */}
         <div className="form-group">
           <label>Date: </label>
           <div>
@@ -157,7 +273,7 @@ export default class EditExercise extends Component {
         </div>
 
         <div className="form-group">
-          <input type="submit" value="Edit Exercise Log" className="btn btn-primary" />
+          <input type="submit" value="Create Auction" className="btn btn-primary" />
         </div>
       </form>
     </div>
