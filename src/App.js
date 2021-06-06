@@ -17,8 +17,11 @@ import ValidatedLoginForm from './components/Login/ValidatedLoginForm'
 import PasswordReset from './components/Login/PasswordReset'
 import Auctionlist from './components/Auctions/Auctionlist'
 import Createauction from './components/Auctions/Createauction'
-import Createuser from './components/Auctions/Createuser'
+import Createseller from './components/Auctions/Creatseller'
 import Editauction from './components/Auctions/Editauction'
+import Createbuyer from './components/Auctions/Createbuyer'
+import BuyerLoginForm from './components/Login/BuyerLoginForm'
+import BuyerHomePage from './components/pages/BuyerHomePage'
 
 function App() {
   return (
@@ -43,7 +46,7 @@ function App() {
           
           <Route path='/SignUpForm' component={SignUpForm}/>
 
-          
+          <Route path='/Createbuyer' component={Createbuyer}/>
 
           <Route path='/CardDetails' component={CardDetails}/>
 
@@ -61,9 +64,13 @@ function App() {
 
           <Route path='/Createauction' component={Createauction}/>
 
-          <Route path='/Createuser' component={Createuser}/>
+          <Route path='/Createseller' component={Createseller}/>
 
           <Route path='/Editauction' component={Editauction}/>
+
+          <Route path='/BuyerLoginForm' component={BuyerLoginForm}/>
+
+          <Route path='/BuyerHomePage' component={BuyerHomePage}/>
 
           
           

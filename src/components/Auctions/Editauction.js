@@ -97,13 +97,18 @@ export default class EditExercise extends Component {
     <div>
       <h2>Edit Auction</h2>
       <form onSubmit={this.onSubmit}>
-        <div className="form-group"> 
+          
+        {/* <div className="form-group"> 
           <label>Username: </label>
           <select ref="userInput"
               required
               className="form-control"
               value={this.state.username}
               onChange={this.onChangeUsername}>
+                    <option value="grapefruit">Grapefruit</option>
+                    <option value="lime">Lime</option>
+                    <option selected value="coconut">Coconut</option>
+                    <option value="mango">Mango</option>
               {
                 this.state.users.map(function(user) {
                   return <option 
@@ -113,7 +118,18 @@ export default class EditExercise extends Component {
                 })
               }
           </select>
+        </div> */}
+
+<div className="form-group"> 
+          <label>User Name: </label>
+          <input  type="text"
+              required
+              className="form-control"
+              value={this.state.username}
+              onChange={this.onChangeUsername}
+              />
         </div>
+
         <div className="form-group"> 
           <label>Description: </label>
           <input  type="text"
@@ -123,6 +139,7 @@ export default class EditExercise extends Component {
               onChange={this.onChangeDescription}
               />
         </div>
+        
         <div className="form-group">
           <label>Duration (in minutes): </label>
           <input 
@@ -142,8 +159,54 @@ export default class EditExercise extends Component {
           </div>
         </div>
 
+        {/* name of the gem */}
+        <div className="form-group"> 
+          <label>Name of the Gem: </label>
+          <input  type="text"
+              required
+              className="form-control"
+              value={this.state.gemname}
+              onChange={this.onChangegemname}
+              />
+        </div>
+{/* Weight in carat */}
+        <div className="form-group"> 
+          <label>Weight(in carat): </label>
+          <input  type="text"
+              required
+              placeholder='(carat)'
+              className="form-control"
+              value={this.state.weight}
+              onChange={this.onChangeweight}
+              />
+        </div>
+{/* weight in ratti */}
+        <div className="form-group"> 
+          <label>Weight(in ratti): </label>
+          <input  type="text"
+              required
+              placeholder='(ratti)'
+              className="form-control"
+              value={this.state.weight1}
+              onChange={this.onChangeweight1}
+              />
+        </div>
+
+{/* estimate value */}
+        <div className="form-group"> 
+          <label>Start Price: </label>
+          <input  type="text"
+              required
+              placeholder='LKR'
+              className="form-control"
+              value={this.state.price}
+              onChange={this.onChangeprice}
+              />
+        </div>
+
+
         <div className="form-group">
-          <input type="submit" value="Edit Exercise Log" className="btn btn-primary" />
+          <input type="submit" value="Update Auction" className="btn btn-primary" />
         </div>
       </form>
     </div>

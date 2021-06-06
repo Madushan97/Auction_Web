@@ -46,7 +46,8 @@ export default function xls() {
                 <div class="container">
                     <img src="images/img-10.png" alt="Avatar" class="image" />
                         <div class="middle">
-                            <Link>
+                            <Link
+                            to='BuyerLoginForm'>
                             <button class='button' ><span>Buyer</span></button>
                             </Link>
                         </div>

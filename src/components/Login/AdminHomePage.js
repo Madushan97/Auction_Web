@@ -18,9 +18,15 @@ function AdminHomePage() {
             </button>
             </Link>
 
-            <Link to='/Createuser'>
+            <Link to='/Createseller'>
             <button>
-                Create User
+                Create Seller
+            </button>
+            </Link>
+
+            <Link to='/Createbuyer'>
+            <button>
+                Create Buyer
             </button>
             </Link>
 

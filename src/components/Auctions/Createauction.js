@@ -3,6 +3,7 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import background from "./img-11.jpg";
+import { date } from 'yup';
 
 export default class EditExercise extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ export default class EditExercise extends Component {
     this.onChangeDescription = this.onChangeDescription.bind(this);
     this.onChangeDuration = this.onChangeDuration.bind(this);
     this.onChangeDate = this.onChangeDate.bind(this);
+    
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
@@ -19,6 +21,7 @@ export default class EditExercise extends Component {
       description: '',
       duration: 0,
       date: new Date(),
+      todate: new date(),
       users: []
     }
   }
@@ -33,7 +36,8 @@ export default class EditExercise extends Component {
           email: response.data.email,
           description: response.data.description,
           duration: response.data.duration,
-          date: new Date(response.data.date)
+          date: new Date(response.data.date),
+          todate: new Date(response.data.date)
         })   
       })
       .catch(function (error) {
@@ -84,6 +88,12 @@ export default class EditExercise extends Component {
     })
   }
 
+//   onChangeToDate(todate) {
+//     this.setState({
+//       date: todate
+//     })
+//   }
+
   onSubmit(e) {
     e.preventDefault();
 
@@ -92,7 +102,8 @@ export default class EditExercise extends Component {
       email: this.state.email,
       description: this.state.description,
       duration: this.state.duration,
-      date: this.state.date
+      date: this.state.date,
+      
     }
 
     console.log(exercise);
@@ -261,9 +272,9 @@ export default class EditExercise extends Component {
               />
         </div>
 
-{/* date */}
+{/* from date */}
         <div className="form-group">
-          <label>Date: </label>
+          <label>From Date: </label>
           <div>
             <DatePicker
               selected={this.state.date}
@@ -271,6 +282,10 @@ export default class EditExercise extends Component {
             />
           </div>
         </div>
+
+        {/* to date */}
+
+        
 
         <div className="form-group">
           <input type="submit" value="Create Auction" className="btn btn-primary" />
