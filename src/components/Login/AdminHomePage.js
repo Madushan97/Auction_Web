@@ -6,7 +6,7 @@ function AdminHomePage() {
     return (
         <div>
             <h2>Admin Dashboard</h2>
-            <Link to='/Createauction'>
+            <Link to='/CreateAuction'>
             <button>
                 Create Auction
             </button>

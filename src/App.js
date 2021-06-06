@@ -8,7 +8,7 @@ import Sell from './components/pages/Sell'
 import Feedback from './components/Feedback'
 import Form from './components/signup/Form'
 import SignUpForm from './components/pages/Signup'
-import CreateAuction from './components/pages/CreateAuction'
+
 import CardDetails from './components/Auctiondetails/CardDetails'
 import xls from './components/pages/xls'
 import LoginPortal from './components/Login/LoginPortal'
@@ -43,7 +43,7 @@ function App() {
           
           <Route path='/SignUpForm' component={SignUpForm}/>
 
-          <Route path='/CreateAuction' component={CreateAuction}/>
+          
 
           <Route path='/CardDetails' component={CardDetails}/>
 
@@ -61,7 +61,7 @@ function App() {
 
           <Route path='/Createauction' component={Createauction}/>
 
-          <Route path='Createuser' component={Createuser}/>
+          <Route path='/Createuser' component={Createuser}/>
 
           <Route path='/Editauction' component={Editauction}/>
 
