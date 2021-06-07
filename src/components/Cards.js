@@ -39,6 +39,34 @@ function Cards() {
             label='Diamond'
               />
           </ul>
+
+          <CardItems
+            
+            src='images/img-3.jpg'
+            _id='A02'
+            name= 'Dimond'
+            size='13mm'
+            weight='Diamond'
+            carote='Diamond'
+            review='Diamond'
+            description='hi'
+            label='Diamond'
+              />
+          
+
+          <CardItems
+            
+            src='images/img-3.jpg'
+            _id='A02'
+            name= 'Dimond'
+            size='13mm'
+            weight='Diamond'
+            carote='Diamond'
+            review='Diamond'
+            description='hi'
+            label='Diamond'
+              />
+          
           
           {/* <ul className='cards__items'>
             <CardItems

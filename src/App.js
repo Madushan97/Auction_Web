@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './App.css'
+
 import Home from './components/pages/Home'
 import bid from './components/pages/Bid'
 import Sell from './components/pages/Sell'
@@ -22,6 +23,7 @@ import Editauction from './components/Auctions/Editauction'
 import Createbuyer from './components/Auctions/Createbuyer'
 import BuyerLoginForm from './components/Login/BuyerLoginForm'
 import BuyerHomePage from './components/pages/BuyerHomePage'
+import BidPlace from './components/Auctions/BidPlace'
 
 function App() {
   return (
@@ -71,6 +73,8 @@ function App() {
           <Route path='/BuyerLoginForm' component={BuyerLoginForm}/>
 
           <Route path='/BuyerHomePage' component={BuyerHomePage}/>
+
+          <Route path='/BidPlace' component={BidPlace}/>
 
           
           

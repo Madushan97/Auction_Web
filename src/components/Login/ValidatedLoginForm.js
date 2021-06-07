@@ -40,7 +40,6 @@ const ValidatedLoginForm = () => (
         handleSubmit
       } = props;
 
-      
       return (
 
         

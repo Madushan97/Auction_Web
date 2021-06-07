@@ -59,7 +59,7 @@ function Navbar() {
 
             <li className='nav-item'>
               {/* navigation bar Bid button  */}
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/BidPage' className='nav-links' onClick={closeMobileMenu}>
                 Bid
               </Link>
             </li>
