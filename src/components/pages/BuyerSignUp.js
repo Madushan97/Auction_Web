@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import DatePicker from 'react-datepicker';
+// import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import background from "./img-11.jpg";
+
 import { date } from 'yup';
 
 export default class EditExercise extends Component {
@@ -27,7 +27,7 @@ export default class EditExercise extends Component {
   }
 
   componentDidMount() {
-    <div style={{ backgroundImage: `url(${background})` }}></div>
+    
 
     axios.get('http://localhost:5000/exercises/'+this.props.match.params.id)
       .then(response => {
@@ -117,7 +117,7 @@ export default class EditExercise extends Component {
   render() {
     return (
     <div>
-      <h2>Create Auction</h2>
+      <h2>Buyer Sign Up</h2>
       <form onSubmit={this.onSubmit}>
 
 {/* username */}
@@ -200,9 +200,9 @@ export default class EditExercise extends Component {
               onChange={this.onChangezipcode}
               />
         </div>
-        <h2>Auction Item Information</h2>
+        
 {/* name of the gem */}
-        <div className="form-group"> 
+        {/* <div className="form-group"> 
           <label>Name of the Gem: </label>
           <input  type="text"
               required
@@ -210,9 +210,9 @@ export default class EditExercise extends Component {
               value={this.state.gemname}
               onChange={this.onChangegemname}
               />
-        </div>
+        </div> */}
 {/* Weight in carat */}
-        <div className="form-group"> 
+        {/* <div className="form-group"> 
           <label>Weight(in carat): </label>
           <input  type="text"
               required
@@ -221,9 +221,9 @@ export default class EditExercise extends Component {
               value={this.state.weight}
               onChange={this.onChangeweight}
               />
-        </div>
+        </div> */}
 {/* weight in ratti */}
-        <div className="form-group"> 
+        {/* <div className="form-group"> 
           <label>Weight(in ratti): </label>
           <input  type="text"
               required
@@ -232,10 +232,10 @@ export default class EditExercise extends Component {
               value={this.state.weight1}
               onChange={this.onChangeweight1}
               />
-        </div>
+        </div> */}
 
 {/* estimate value */}
-        <div className="form-group"> 
+        {/* <div className="form-group"> 
           <label>Start Price: </label>
           <input  type="text"
               required
@@ -244,14 +244,14 @@ export default class EditExercise extends Component {
               value={this.state.price}
               onChange={this.onChangeprice}
               />
-        </div>
+        </div> */}
 
 {/* Image */}
     
 
 {/* description */}
         </div>
-        <div className="form-group"> 
+        {/* <div className="form-group"> 
           <label>Description: </label>
           <input  type="text"
               required
@@ -259,11 +259,11 @@ export default class EditExercise extends Component {
               value={this.state.description}
               onChange={this.onChangeDescription}
               />
-        </div>
+        </div> */}
 
 
 {/* duration */}
-        <div className="form-group">
+        {/* <div className="form-group">
           <label>Duration (in hours): </label>
           <input 
               type="text" 
@@ -271,9 +271,9 @@ export default class EditExercise extends Component {
               value={this.state.duration}
               onChange={this.onChangeDuration}
               />
-        </div>
+        </div> */}
 
-        <div className="form-group">
+        {/* <div className="form-group">
           <label>Upload File: </label>
           <input 
               type="file" 
@@ -281,10 +281,10 @@ export default class EditExercise extends Component {
               value={this.state.uploadfile}
               onChange={this.onChangeUploadfile}
               />
-        </div>
+        </div> */}
 
 {/* from date */}
-        <div className="form-group">
+        {/* <div className="form-group">
           <label>From Date: </label>
           <div>
             <DatePicker
@@ -292,14 +292,14 @@ export default class EditExercise extends Component {
               onChange={this.onChangeDate}
             />
           </div>
-        </div>
+        </div> */}
 
         {/* to date */}
 
         
 
         <div className="form-group">
-          <input type="submit" value="Create Auction" className="btn btn-primary" />
+          <input type="submit" value="Create Buyer Account" className="btn btn-primary" />
         </div>
       </form>
     </div>

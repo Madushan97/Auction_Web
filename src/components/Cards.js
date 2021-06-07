@@ -42,29 +42,55 @@ function Cards() {
 
           <CardItems
             
-            src='images/img-3.jpg'
+            src='images/img-7.jpg'
             _id='A02'
-            name= 'Dimond'
-            size='13mm'
-            weight='Diamond'
-            carote='Diamond'
-            review='Diamond'
-            description='hi'
-            label='Diamond'
+            name= 'Cat Eye'
+            // size='13mm'
+            // weight='Diamond'
+            // carote='Diamond'
+            // review='Diamond'
+            // description='hi'
+            label='Cat eye'
               />
           
 
           <CardItems
             
-            src='images/img-3.jpg'
+            src='images/img-6.jpg'
+            _id='A02'
+            name= 'Ruby'
+            // size='13mm'
+            // weight='Diamond'
+            // carote='Diamond'
+            // review='Diamond'
+            // description='hi'
+            label='Ruby'
+              />
+
+<CardItems
+            
+            src='images/img-5.jpg'
             _id='A02'
             name= 'Dimond'
             size='13mm'
-            weight='Diamond'
-            carote='Diamond'
-            review='Diamond'
-            description='hi'
-            label='Diamond'
+            // weight='Diamond'
+            // carote='Diamond'
+            // review='Diamond'
+            // description='hi'
+            label='Spinel'
+              />
+
+<CardItems
+            
+            src='images/img-4.jpg'
+            _id='A02'
+            name= 'Rose Quartz'
+            size='13mm'
+            // weight='Diamond'
+            // carote='Diamond'
+            // review='Diamond'
+            // description='hi'
+            label='Rose Quartz'
               />
           
           

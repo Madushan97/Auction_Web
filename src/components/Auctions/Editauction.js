@@ -192,6 +192,16 @@ export default class EditExercise extends Component {
               />
         </div>
 
+        <div className="form-group">
+          <label>Upload File: </label>
+          <input 
+              type="file" 
+              className="form-control"
+              value={this.state.uploadfile}
+              onChange={this.onChangeUploadfile}
+              />
+        </div>
+
 {/* estimate value */}
         <div className="form-group"> 
           <label>Start Price: </label>

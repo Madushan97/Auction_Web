@@ -24,6 +24,12 @@ import Createbuyer from './components/Auctions/Createbuyer'
 import BuyerLoginForm from './components/Login/BuyerLoginForm'
 import BuyerHomePage from './components/pages/BuyerHomePage'
 import BidPlace from './components/Auctions/BidPlace'
+import SellerLoginForm from './components/Login/SellerLoginForm'
+import SellerHomePage from './components/pages/SellerHomePage'
+import xlss from './components/pages/xls'
+import AdminSignUp from './components/pages/AdminSignUp'
+import BuyerSignUp from './components/pages/BuyerSignUp'
+
 
 function App() {
   return (
@@ -76,9 +82,16 @@ function App() {
 
           <Route path='/BidPlace' component={BidPlace}/>
 
-          
-          
-     
+          <Route path='/SellerLoginForm' component={SellerLoginForm}/>
+
+          <Route path='/SellerHomePage' component={SellerHomePage}/>
+
+          <Route path='/xlss' component={xlss}/>
+
+          <Route path='/AdminSignUp' component={AdminSignUp}/>
+
+          <Route path='/BuyerSignUp' component={BuyerSignUp}/>
+
         </Switch>
         
     </Router>
