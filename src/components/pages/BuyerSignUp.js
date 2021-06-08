@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 // import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-
+import {Link} from "react-router-dom"
 import { date } from 'yup';
 
 export default class EditExercise extends Component {
@@ -299,7 +299,9 @@ export default class EditExercise extends Component {
         
 
         <div className="form-group">
+            <Link to='/BuyerHomePage'>
           <input type="submit" value="Create Buyer Account" className="btn btn-primary" />
+          </Link>
         </div>
       </form>
     </div>

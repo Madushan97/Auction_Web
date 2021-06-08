@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 // import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import {Link} from 'react-router-dom'
+import {Link} from "react-router-dom"
 import { date } from 'yup';
 
 export default class EditExercise extends Component {
@@ -117,7 +117,7 @@ export default class EditExercise extends Component {
   render() {
     return (
     <div>
-      <h2>Admin Sign Up</h2>
+      <h2>Seller Sign Up</h2>
       <form onSubmit={this.onSubmit}>
 
 {/* username */}
@@ -299,8 +299,8 @@ export default class EditExercise extends Component {
         
 
         <div className="form-group">
-            <Link to='AdminHomePage'>
-          <input type="submit" value="Create Admin Account" className="btn btn-primary" />
+            <Link to='/SellerHomePage'>
+          <input type="submit" value="Create Seller Account" className="btn btn-primary" />
           </Link>
         </div>
       </form>

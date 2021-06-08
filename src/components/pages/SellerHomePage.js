@@ -8,17 +8,18 @@ function SellerHomePage() {
 
             <ul>
                 <li><Link 
-                        to='/BidPlace'>
+                        to='/Cards'>
                     <button>Place a Bid</button>
                     </Link>
                 </li>
                 <li><Link
-                        to='/Createauction'>
+                        to='/Cards'>
                     <button>Create an Auction</button>
                     </Link>
                 </li>
-                <li>
+                <li><Link to='/Cards'>
                     <button>Manage Bid</button>
+                    </Link>
                 </li>
                 <li>
                     <button>Summary</button>

@@ -59,7 +59,7 @@ function Navbar() {
 
             <li className='nav-item'>
               {/* navigation bar Bid button  */}
-              <Link to='/BidPage' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/Cards' className='nav-links' onClick={closeMobileMenu}>
                 Bid
               </Link>
             </li>
@@ -73,7 +73,7 @@ function Navbar() {
 
             <li className='nav-item'>
               {/* navigation bar Daily Deals button */}
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/Dailydeals' className='nav-links' onClick={closeMobileMenu}>
                 Daily Deals
               </Link>
             </li>

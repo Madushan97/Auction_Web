@@ -13,9 +13,11 @@ function AdminHomePage() {
             </Link>
 
             <Link to='/Auctionlist'>
+                <Link to='/Cards'>
             <button>
                 Auction List
             </button>
+            </Link>
             </Link>
 
             <Link to='/Createseller'>
@@ -30,11 +32,16 @@ function AdminHomePage() {
             </button>
             </Link>
 
-            <Link to='/Editauction'>
+            <Link to='/Cards'>
             <button>
                 Edit Auction
             </button>
             </Link>
+            {/* <Link to='/'>
+            <button>
+                Edit Auction
+            </button>
+            </Link> */}
         </div>
     )
 }

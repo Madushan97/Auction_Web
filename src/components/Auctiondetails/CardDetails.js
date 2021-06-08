@@ -39,6 +39,17 @@ export default function CardDetails() {
                                 <button className='primary block'>Place a Bid</button>
                                 </Link>
                             </li>
+
+                            <li><Link to='/Editauction'>
+                                <button className='primary block'>Edit Auction</button>
+                                </Link>
+                            </li>
+
+                            <li><Link to='/ConfirmationLog'>
+                                <button className='primary block'>Delete Auction</button>
+                                </Link>
+                            </li>
+
                         </ul>
                     </div>
                 </div>

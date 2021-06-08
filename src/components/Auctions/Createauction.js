@@ -4,6 +4,7 @@ import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import background from "./img-11.jpg";
 import { date } from 'yup';
+import {Link} from 'react-router-dom'
 
 export default class EditExercise extends Component {
   constructor(props) {
@@ -299,7 +300,9 @@ export default class EditExercise extends Component {
         
 
         <div className="form-group">
+          <Link to='/Cards'>
           <input type="submit" value="Create Auction" className="btn btn-primary" />
+          </Link>
         </div>
       </form>
     </div>
