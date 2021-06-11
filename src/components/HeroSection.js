@@ -19,14 +19,14 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
-          path="/xls"
+          path="/"
         >
           GET STARTED
         </GetStartedButton>
         
     {/* to create an auction */}
         <LoginButton
-          to='./pages/CreatAuction.js'
+          to='/'
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
