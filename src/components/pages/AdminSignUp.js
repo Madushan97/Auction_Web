@@ -26,6 +26,8 @@ export default class EditExercise extends Component {
     }
   }
 
+  
+
   componentDidMount() {
     
 
@@ -35,9 +37,9 @@ export default class EditExercise extends Component {
           username: response.data.username,
           email: response.data.email,
           description: response.data.description,
-          duration: response.data.duration,
-          date: new Date(response.data.date),
-          todate: new Date(response.data.date)
+          duration: response.data.duration
+          // date: new Date(response.data.date),
+          // todate: new Date(response.data.date)
         })   
       })
       .catch(function (error) {
@@ -88,11 +90,11 @@ export default class EditExercise extends Component {
     })
   }
 
-//   onChangeToDate(todate) {
-//     this.setState({
-//       date: todate
-//     })
-//   }
+  onChangeToDate(todate) {
+    this.setState({
+      date: todate
+    })
+  }
 
   onSubmit(e) {
     e.preventDefault();
@@ -101,8 +103,8 @@ export default class EditExercise extends Component {
       username: this.state.username,
       email: this.state.email,
       description: this.state.description,
-      duration: this.state.duration,
-      date: this.state.date,
+      duration: this.state.duration
+      // date: this.state.date,
       
     }
 
@@ -138,6 +140,7 @@ export default class EditExercise extends Component {
               className="form-control"
               value={this.state.email}
               onChange={this.onChangeEmail}
+              
               />
         </div>
 
@@ -201,105 +204,11 @@ export default class EditExercise extends Component {
               />
         </div>
         
-{/* name of the gem */}
-        {/* <div className="form-group"> 
-          <label>Name of the Gem: </label>
-          <input  type="text"
-              required
-              className="form-control"
-              value={this.state.gemname}
-              onChange={this.onChangegemname}
-              />
-        </div> */}
-{/* Weight in carat */}
-        {/* <div className="form-group"> 
-          <label>Weight(in carat): </label>
-          <input  type="text"
-              required
-              placeholder='(carat)'
-              className="form-control"
-              value={this.state.weight}
-              onChange={this.onChangeweight}
-              />
-        </div> */}
-{/* weight in ratti */}
-        {/* <div className="form-group"> 
-          <label>Weight(in ratti): </label>
-          <input  type="text"
-              required
-              placeholder='(ratti)'
-              className="form-control"
-              value={this.state.weight1}
-              onChange={this.onChangeweight1}
-              />
-        </div> */}
-
-{/* estimate value */}
-        {/* <div className="form-group"> 
-          <label>Start Price: </label>
-          <input  type="text"
-              required
-              placeholder='LKR'
-              className="form-control"
-              value={this.state.price}
-              onChange={this.onChangeprice}
-              />
-        </div> */}
-
-{/* Image */}
-    
-
-{/* description */}
         </div>
-        {/* <div className="form-group"> 
-          <label>Description: </label>
-          <input  type="text"
-              required
-              className="form-control"
-              value={this.state.description}
-              onChange={this.onChangeDescription}
-              />
-        </div> */}
-
-
-{/* duration */}
-        {/* <div className="form-group">
-          <label>Duration (in hours): </label>
-          <input 
-              type="text" 
-              className="form-control"
-              value={this.state.duration}
-              onChange={this.onChangeDuration}
-              />
-        </div> */}
-
-        {/* <div className="form-group">
-          <label>Upload File: </label>
-          <input 
-              type="file" 
-              className="form-control"
-              value={this.state.uploadfile}
-              onChange={this.onChangeUploadfile}
-              />
-        </div> */}
-
-{/* from date */}
-        {/* <div className="form-group">
-          <label>From Date: </label>
-          <div>
-            <DatePicker
-              selected={this.state.date}
-              onChange={this.onChangeDate}
-            />
-          </div>
-        </div> */}
-
-        {/* to date */}
-
-        
+             
 
         <div className="form-group">
-            <Link to='AdminHomePage'>
+            <Link to='/'>
           <input type="submit" value="Create Admin Account" className="btn btn-primary" />
           </Link>
         </div>

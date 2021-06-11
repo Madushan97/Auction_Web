@@ -201,100 +201,12 @@ export default class EditExercise extends Component {
               />
         </div>
         
-{/* name of the gem */}
-        {/* <div className="form-group"> 
-          <label>Name of the Gem: </label>
-          <input  type="text"
-              required
-              className="form-control"
-              value={this.state.gemname}
-              onChange={this.onChangegemname}
-              />
-        </div> */}
-{/* Weight in carat */}
-        {/* <div className="form-group"> 
-          <label>Weight(in carat): </label>
-          <input  type="text"
-              required
-              placeholder='(carat)'
-              className="form-control"
-              value={this.state.weight}
-              onChange={this.onChangeweight}
-              />
-        </div> */}
-{/* weight in ratti */}
-        {/* <div className="form-group"> 
-          <label>Weight(in ratti): </label>
-          <input  type="text"
-              required
-              placeholder='(ratti)'
-              className="form-control"
-              value={this.state.weight1}
-              onChange={this.onChangeweight1}
-              />
-        </div> */}
 
-{/* estimate value */}
-        {/* <div className="form-group"> 
-          <label>Start Price: </label>
-          <input  type="text"
-              required
-              placeholder='LKR'
-              className="form-control"
-              value={this.state.price}
-              onChange={this.onChangeprice}
-              />
-        </div> */}
-
-{/* Image */}
     
 
-{/* description */}
+
         </div>
-        {/* <div className="form-group"> 
-          <label>Description: </label>
-          <input  type="text"
-              required
-              className="form-control"
-              value={this.state.description}
-              onChange={this.onChangeDescription}
-              />
-        </div> */}
-
-
-{/* duration */}
-        {/* <div className="form-group">
-          <label>Duration (in hours): </label>
-          <input 
-              type="text" 
-              className="form-control"
-              value={this.state.duration}
-              onChange={this.onChangeDuration}
-              />
-        </div> */}
-
-        {/* <div className="form-group">
-          <label>Upload File: </label>
-          <input 
-              type="file" 
-              className="form-control"
-              value={this.state.uploadfile}
-              onChange={this.onChangeUploadfile}
-              />
-        </div> */}
-
-{/* from date */}
-        {/* <div className="form-group">
-          <label>From Date: </label>
-          <div>
-            <DatePicker
-              selected={this.state.date}
-              onChange={this.onChangeDate}
-            />
-          </div>
-        </div> */}
-
-        {/* to date */}
+        
 
         
 

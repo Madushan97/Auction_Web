@@ -77,7 +77,7 @@ const SellerLoginForm = () => (
             <div className="input-feedback">{errors.password}</div>
           )}
         <Link
-        to='./SellerHomePage'>
+        to='./SellerHomepage'>
           <button  type="submit" disabled={isSubmitting}>
             Login
           </button>

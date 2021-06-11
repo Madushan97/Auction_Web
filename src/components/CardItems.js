@@ -15,7 +15,7 @@ function CardItems(props) {
                         <h5 className="cards__item__text">{props.name}</h5>
                         <h5 className="cards__item__text">{props.size}</h5>
                         <h5 className="cards__item__text">{props.weight}</h5>
-                        <h5 className="cards__item__text">{props.carote}</h5>
+                        <h5 className="cards__item__text">{props.carate}</h5>
                         <h5 className="cards__item__text">{props.reviews}</h5>
                         <h5 className="cards__item__text">{props.description}</h5>
                     </div>

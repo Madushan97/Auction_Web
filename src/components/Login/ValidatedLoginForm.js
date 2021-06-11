@@ -77,7 +77,7 @@ const ValidatedLoginForm = () => (
             <div className="input-feedback">{errors.password}</div>
           )}
         <Link
-        to='./AdminHomePage'>
+        to='./'>
           <button  type="submit" disabled={isSubmitting}>
             Login
           </button>

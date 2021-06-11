@@ -1,47 +1,46 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
+
+import {NotificationsNone, Language, Settings} from '@material-ui/icons'
+// import Sidebar from '../Sidebar/Sidebar'
+// import Home from '../OtherPages/home/home'
 
 function SellerHomePage() {
     return (
+
+        
         <div>
-            <h2>Welcome to Seller Home Page</h2>
+             <div className='topbar'>
+                
+                <div className='topbarWrapper'>
+                    <div className='topLeft'> <span className="logo">Seller</span></div>
+                       
+                    <div className='topRight'>
+
+                        <div className="topbarIconContainer">
+                            <NotificationsNone/>
+                            <span className="topIconBadge">3</span>
+                        </div>
+
+                        <div className="topbarIconContainer">
+                            <Language/>
+                            <span className="topIconBadge">1</span>
+                        </div>
+
+                        <div className="topbarIconContainer">
+                            <Settings/>
+                            
+                        </div>
+                        <img src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="topAvatar" />
+                    </div>
+                </div>
+            </div>
+            {/* <h2>Welcome to Seller Home Page</h2> */}
 
             <ul>
-                <li><Link 
-                        to='/Cards'>
-                    <button>Place a Bid</button>
-                    </Link>
-                </li>
-                <li><Link
-                        to='/Cards'>
-                    <button>Create an Auction</button>
-                    </Link>
-                </li>
-                <li><Link to='/Cards'>
-                    <button>Manage Bid</button>
-                    </Link>
-                </li>
-                <li>
-                    <button>Summary</button>
-                </li>
-                <li>
-                    <button>Recently View</button>
-                </li>
-                <li>
-                    <button>Purchase History</button>
-                </li>
-                <li>
-                    <button>Save Search</button>
-                </li>
-                <li>
-                    <button>Messages</button>
-                </li>
-                <li>
-                    <button>Help and Contact</button>
-                </li>
-                <li>
-                    <button>Daily Deals</button>
-                </li>
+                
+                
+                
             </ul>
         </div>
     )

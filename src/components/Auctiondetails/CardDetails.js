@@ -12,19 +12,30 @@ export default function CardDetails() {
                     <img className='large' src='images/img-3.jpg' alt='gem' ></img>
                 </div>
                 <div className='col-1'>
-                    <ul>
+                    {/* <ul>
                         <li>
-                            {/* <h1>Gem</h1> */}
+                            <h1>Gem</h1>
                         </li>
                         <li>Price</li>
                         <li>Description</li>
-                        {/* <p>Description</p> */}
-                    </ul>
+                        <p>Description</p>
+                    </ul> */}
                 </div>
                 <div className='col-1'>
                     <div className='card card-body'>
                         <ul>
-                            <li>
+                            <div>
+                                <ul>
+                                    Current Price :
+                                </ul>
+                                <ul>
+                                    Remaining Time:
+                                </ul>
+                                <ul>
+                                    
+                                </ul>
+                            </div>
+                            {/* <li>
                                 <div className='row'>
                                     <div>Price</div>
                                 </div>
@@ -34,7 +45,7 @@ export default function CardDetails() {
                                 <div className='row'>
                                     <div>Status</div>
                                 </div>
-                            </li>
+                            </li> */}
                             <li><Link to='/BidPlace'>
                                 <button className='primary block'>Place a Bid</button>
                                 </Link>

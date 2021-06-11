@@ -31,7 +31,7 @@ export default function xls() {
             </video>
 
             <h2>Welcome to Sign In</h2>
-                
+                <div className='package'>
             {/* admin */}
                 <div class="container">
                     <img src="images/img-10.png" alt="Avatar" class="image" />
@@ -61,6 +61,7 @@ export default function xls() {
                             <button  class='button' ><span>Seller</span></button>
                             </Link>
                         </div>
+                </div>
                 </div>
 
             

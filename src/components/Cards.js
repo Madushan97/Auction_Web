@@ -14,76 +14,72 @@ function Cards() {
             <CardItems
               
               src='images/img-1.jpg'
-              _id='A02'
-              name= 'Dimond'
-              size='13mm'
-              weight='Diamond'
-              carote='12'
-              reviews='5 review'
-              label='Garnet'
-              description='hivvvv'
+    
               path='/CardDetails'
+
+              _id='AUction ID: A01'
+              name= 'Name: Dimond'
+              carate='Carate: 5'
+              reviews='Review: '
+              description='Description: Uncut'
+              label='Diamond'
+              
               
             />
            
             <CardItems
             
-            src='images/img-3.jpg'
-            _id='A02'
-            name= 'Dimond'
-            size='13mm'
-            weight='Diamond'
-            carote='Diamond'
-            review='Diamond'
-            description='hi'
+            src='images/img-5.jpg'
+            _id='AUction ID: A02'
+            name= 'Name: Dimond'
+            carate='Carate: 3'
+            reviews='Review: '
+            description='Description: Uncut'
             label='Diamond'
               />
           </ul>
 
           <CardItems
             
-            src='images/img-7.jpg'
-            _id='A02'
-            name= 'Cat Eye'
-            // size='13mm'
-            // weight='Diamond'
-            // carote='Diamond'
-            // review='Diamond'
-            // description='hi'
-            label='Cat eye'
+            src='images/img-.jpg'
+            _id='AUction ID: A03'
+            name= 'Name: Cat Eye'
+            carate='Carate: 2'
+            reviews='Review: '
+            description='Description: cut'
+            label='Cat Eye'
               />
           
 
           <CardItems
             
             src='images/img-6.jpg'
-            _id='A02'
-            name= 'Ruby'
-            // size='13mm'
-            // weight='Diamond'
-            // carote='Diamond'
-            // review='Diamond'
-            // description='hi'
+            _id='AUction ID: A04'
+            name= 'Name: Ruby'
+            carate='Carate: 1'
+            reviews='Review: '
+            description='Description: Uncut'
             label='Ruby'
+
               />
 
 <CardItems
             
             src='images/img-5.jpg'
-            _id='A02'
-            name= 'Dimond'
-            size='13mm'
-            // weight='Diamond'
-            // carote='Diamond'
-            // review='Diamond'
-            // description='hi'
+            
             label='Spinel'
+            _id='AUction ID: A05'
+            name= 'Name: Spinel'
+            carate='Carate: 3'
+            reviews='Review: '
+            description='Description: Uncut'
+           
               />
 
 <CardItems
             
             src='images/img-4.jpg'
-            _id='A02'
+            _id='A06'
             name= 'Rose Quartz'
             size='13mm'
             // weight='Diamond'
