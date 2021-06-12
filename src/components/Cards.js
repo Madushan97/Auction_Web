@@ -82,34 +82,12 @@ function Cards() {
             _id='A06'
             name= 'Rose Quartz'
             size='13mm'
-            // weight='Diamond'
-            // carote='Diamond'
-            // review='Diamond'
-            // description='hi'
+        
             label='Rose Quartz'
               />
           
           
-          {/* <ul className='cards__items'>
-            <CardItems
-              src='images/img-3.jpg'
-              text= 'Details'
-              label='Ruby'
-              // path='/BidForm'            
-            />
-            <CardItems
-              src='images/img-4.jpg'
-              text= 'Details'
-              label='Diamond'
-              // path='/BidForm'
-              />
-            <CardItems
-              src='images/img-5.jpg'
-              text= 'Details'
-              label='DIamond'
-              // path='/BidForm'
-            />
-          </ul> */}
+          
         </div>
       </div>
     </div>
