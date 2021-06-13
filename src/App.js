@@ -12,6 +12,7 @@ import Cards from './components/Cards'
 import DailyDeals from './components/pages/DailyDeals'
 import LoginPage from './components/Login/LoginPage'
 import AuctionList from './components/Auction/AuctionList'
+import SignUp from './components/Registration/SignUp'
 
 
 function App() {
@@ -27,21 +28,21 @@ function App() {
           {/* bid page connection */}
           <Route path='/bid' component={bid}/>
           {/* Sell page connection */}
-          <Route path='/sell' component={Sell}/>
-          {/* Login page connection */}
-         
+          <Route path='/sell' component={Sell}/>   
           {/* Feddback page connection */}
           <Route path ='/Feedback' component={Feedback}/>
-
+          {/* have some errors. can't remove it */}
           <Route path ='/Form' component={Form}/>
-
+          {/* card templates */}
           <Route path ='/Cards' component={Cards}/>
-
+          {/* daily deals--> Hot deals */}
           <Route path ='/DailyDeals' component={DailyDeals}/>
-
+          {/* Login page */}
           <Route path ='/LoginPage' component={LoginPage}/>
-
+          {/* Auction List that are available at the moment */}
           <Route path ='/AuctionList' component={AuctionList}/>
+          {/* SignUp form */}
+          <Route path = '/SignUp' component={SignUp}/>
 
         </Switch>
         
