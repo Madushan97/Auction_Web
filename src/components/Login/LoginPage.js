@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Online Auction
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -60,6 +60,7 @@ export default function SignIn() {
           Sign in
         </Typography>
         <form className={classes.form} noValidate>
+
           <TextField
             variant="outlined"
             margin="normal"
@@ -86,6 +87,8 @@ export default function SignIn() {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
+          
+
           <Button
             type="submit"
             fullWidth
@@ -95,6 +98,7 @@ export default function SignIn() {
           >
             Sign In
           </Button>
+
           <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">

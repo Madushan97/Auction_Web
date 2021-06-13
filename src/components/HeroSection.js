@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { GetStartedButton } from './GetStartedButton';
-import {LoginButton} from './Login/LoginButton'
+import {CreateAuctionButton} from './CreateAuctionButton'
 import './HeroSection.css';
 
 function HeroSection() {
@@ -25,8 +25,8 @@ function HeroSection() {
         </GetStartedButton>
         
     {/* to create an auction */}
-        <LoginButton
-          to='/'
+        <CreateAuctionButton
+          to='./AuctionList'
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
@@ -34,7 +34,7 @@ function HeroSection() {
         >
           {/* i for the image next to text */}
           CREATE AUCTION <i className='far fa-play-circle' />
-        </LoginButton>
+        </CreateAuctionButton>
 
       </div>
     </div>

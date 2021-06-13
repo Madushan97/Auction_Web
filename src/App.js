@@ -11,10 +11,8 @@ import Form from './components/signup/Form'
 import Cards from './components/Cards'
 import DailyDeals from './components/pages/DailyDeals'
 import LoginPage from './components/Login/LoginPage'
+import AuctionList from './components/Auction/AuctionList'
 
-
-
-// import ConfirmationLog from './components/ConfirmationLog'
 
 function App() {
   return (
@@ -33,19 +31,17 @@ function App() {
           {/* Login page connection */}
          
           {/* Feddback page connection */}
-          <Route path='/Feedback' component={Feedback}/>
+          <Route path ='/Feedback' component={Feedback}/>
 
-          <Route path='/Form' component={Form}/>
+          <Route path ='/Form' component={Form}/>
 
-          <Route path='/Cards' component={Cards}/>
+          <Route path ='/Cards' component={Cards}/>
 
-          <Route path='/DailyDeals' component={DailyDeals}/>
+          <Route path ='/DailyDeals' component={DailyDeals}/>
 
           <Route path ='/LoginPage' component={LoginPage}/>
 
-       
-
-          
+          <Route path ='/AuctionList' component={AuctionList}/>
 
         </Switch>
         
