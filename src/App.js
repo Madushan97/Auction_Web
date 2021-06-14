@@ -11,8 +11,9 @@ import Form from './components/signup/Form'
 import Cards from './components/Cards'
 import DailyDeals from './components/pages/DailyDeals'
 import LoginPage from './components/Login/LoginPage'
-import AuctionList from './components/Auction/AuctionList'
+import AuctionList from './components/Auction/AuctionCard'
 import SignUp from './components/Registration/SignUp'
+import AuctionCard from './components/Auction/AuctionCard'
 
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
           <Route path ='/AuctionList' component={AuctionList}/>
           {/* SignUp form */}
           <Route path = '/SignUp' component={SignUp}/>
+
+          <Route path='/AuctionCard' component={AuctionCard}/>
 
      
 
