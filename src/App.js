@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './App.css'
 
 import Home from './components/pages/Home'
-import bid from './components/pages/Bid'
+// import bid from './components/pages/Bid'
 import Sell from './components/pages/Sell'
 import Feedback from './components/Feedback'
 import Form from './components/signup/Form'
@@ -26,7 +26,7 @@ function App() {
           {/* home page connection */}
           <Route path='/' exact component={Home}/>
           {/* bid page connection */}
-          <Route path='/bid' component={bid}/>
+          {/* <Route path='/bid' component={bid}/> */}
           {/* Sell page connection */}
           <Route path='/sell' component={Sell}/>   
           {/* Feddback page connection */}
@@ -43,6 +43,8 @@ function App() {
           <Route path ='/AuctionList' component={AuctionList}/>
           {/* SignUp form */}
           <Route path = '/SignUp' component={SignUp}/>
+
+     
 
         </Switch>
         
