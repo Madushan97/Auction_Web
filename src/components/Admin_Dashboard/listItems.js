@@ -20,6 +20,24 @@ export const mainListItems = (
     </ListItem>
     <ListItem button>
       <ListItemIcon>
+        <DashboardIcon />
+      </ListItemIcon>
+      <ListItemText primary="Analysis" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <DashboardIcon />
+      </ListItemIcon>
+      <ListItemText primary="Auction" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <DashboardIcon />
+      </ListItemIcon>
+      <ListItemText primary="Bids" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
       <ListItemText primary="Orders" />
