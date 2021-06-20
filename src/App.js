@@ -15,6 +15,7 @@ import AuctionList from './components/Auction/AuctionCard'
 import SignUp from './components/Registration/SignUp'
 import AuctionCard from './components/Auction/AuctionCard'
 import SignInSide from './components/Login/LoginPage'
+import Dashboard from './components/Admin_Dashboard/Dashboard'
 
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
           <Route path='/AuctionCard' component={AuctionCard}/>
 
           <Route path = '/SignInSide' component={SignInSide}/>
+
+          <Route path = '/Dashboard' component={Dashboard}/>
 
      
 
