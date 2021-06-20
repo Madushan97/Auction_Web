@@ -18,7 +18,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="#">
+      <Link color="inherit" href="https://material-ui.com/">
         Online Auction
       </Link>{' '}
       {new Date().getFullYear()}
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, ];
+const cards = [9];
 
 export default function Album() {
   const classes = useStyles();
@@ -69,12 +69,9 @@ export default function Album() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          {/* <CameraIcon className={classes.icon} /> */}
-          <Typography variant="h6" align="center" color="inherit" noWrap>
-          <Grid item>
-                  
-                </Grid>
-            Auction List
+          <CameraIcon className={classes.icon} />
+          <Typography variant="h6" color="inherit" noWrap>
+            Album layout
           </Typography>
         </Toolbar>
       </AppBar>
@@ -83,19 +80,16 @@ export default function Album() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              {/* Auction List */}
-              
+              Welcome to Auctions
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+             {/*  */}
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="secondary">
-                    Create an Auction
+                  <Button variant="contained" color="primary">
+                    CREATE AUCTION
                   </Button>
                 </Grid>
                 <Grid item>
@@ -115,7 +109,7 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    // image="https://source.unsplash.com/random"
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>

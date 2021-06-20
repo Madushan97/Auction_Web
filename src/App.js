@@ -14,6 +14,7 @@ import LoginPage from './components/Login/LoginPage'
 import AuctionList from './components/Auction/AuctionCard'
 import SignUp from './components/Registration/SignUp'
 import AuctionCard from './components/Auction/AuctionCard'
+import SignInSide from './components/Login/LoginPage'
 
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
           <Route path = '/SignUp' component={SignUp}/>
 
           <Route path='/AuctionCard' component={AuctionCard}/>
+
+          <Route path = '/SignInSide' component={SignInSide}/>
 
      
 
