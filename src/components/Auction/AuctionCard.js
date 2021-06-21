@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [9];
+const cards = [9, 7];
 
 export default function Album() {
   const classes = useStyles();
@@ -104,10 +104,10 @@ export default function Album() {
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                     Cat Eye
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                    display a luminous band reminiscent of the eye of a cat; this particular quality is termed chatoyancy.
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -127,10 +127,10 @@ export default function Album() {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          {/* Footer */}
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
+          {/* Something here to give the footer a purpose! */}
         </Typography>
         <Copyright />
       </footer>

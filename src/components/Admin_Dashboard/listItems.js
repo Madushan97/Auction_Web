@@ -10,62 +10,69 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import {Link} from 'react-router-dom'
+import GavelIcon from '@material-ui/icons/Gavel';
+import AssessmentRoundedIcon from '@material-ui/icons/AssessmentRounded';
+import DashboardRoundedIcon from '@material-ui/icons/DashboardRounded';
+import AccountBalanceRoundedIcon from '@material-ui/icons/AccountBalanceRounded';
+import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
+import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
+import LayersRoundedIcon from '@material-ui/icons/LayersRounded';
 
 export const mainListItems = (
   <div>
     <ListItem button>
-      <ListItemIcon>
+      <DashboardRoundedIcon>
         <DashboardIcon />
-      </ListItemIcon>
+      </DashboardRoundedIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
 
     <ListItem button>
-      <ListItemIcon>
+      <AssessmentRoundedIcon>
         <DashboardIcon />
-      </ListItemIcon>
+      </AssessmentRoundedIcon>
       <ListItemText primary="Analysis" />
     </ListItem>
 
     <ListItem button>
-      <ListItemIcon>
+      <AccountBalanceRoundedIcon>
         <DashboardIcon />
-      </ListItemIcon>
+      </AccountBalanceRoundedIcon>
       <ListItemText primary="Auction" />
     </ListItem>
 
-    <ListItem button>
-      <ListItemIcon>
+    <ListItem button component = {Link} to='/AuctionList'>
+      <GavelIcon>
         <DashboardIcon />
-      </ListItemIcon>
-      <ListItemText button component = {Link} to='/AuctionList' primary="Bids" />
+      </GavelIcon>
+      <ListItemText button  primary="   Bids" />
     </ListItem>
 
     <ListItem button>
-      <ListItemIcon>
+      <ShoppingCartRoundedIcon>
         <ShoppingCartIcon />
-      </ListItemIcon>
+      </ShoppingCartRoundedIcon>
       <ListItemText primary="Orders" />
     </ListItem>
 
     <ListItem button>
-      <ListItemIcon>
+      <PeopleAltRoundedIcon>
         <PeopleIcon />
-      </ListItemIcon>
+      </PeopleAltRoundedIcon>
       <ListItemText primary="Customers" />
     </ListItem>
 
     <ListItem button>
-      <ListItemIcon>
+      <AssessmentRoundedIcon>
         <BarChartIcon />
-      </ListItemIcon>
+      </AssessmentRoundedIcon>
       <ListItemText primary="Reports" />
     </ListItem>
 
     <ListItem button>
-      <ListItemIcon>
+      <LayersRoundedIcon>
         <LayersIcon />
-      </ListItemIcon>
+      </LayersRoundedIcon>
       <ListItemText primary="Integrations" />
     </ListItem>
 
@@ -95,6 +102,6 @@ export const secondaryListItems = (
       </ListItemIcon>
       <ListItemText primary="Year-end sale" />
     </ListItem>
-    
+
   </div>
 );

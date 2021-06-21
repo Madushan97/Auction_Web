@@ -66,6 +66,7 @@ const useStyles = makeStyles((theme) => ({
 
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
 
+// for the connected 3 pages
 function getStepContent(step) {
   switch (step) {
     case 0:
@@ -139,7 +140,7 @@ export default function Checkout() {
                     onClick={handleNext}
                     className={classes.button}
                   >
-                    {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                    {activeStep === steps.length - 1 ? 'Confirm' : 'Next'}
                   </Button>
                 </div>
               </React.Fragment>

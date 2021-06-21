@@ -7,7 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Grid from '@material-ui/core/Grid';
 
 const products = [
-  { name: 'Product 1', desc: 'A nice thing', price: '$9.99' },
+  { name: 'Product 1', desc: 'A nice thing', price: '00.00LKR' },
   
 ];
 const addresses = ['1 Material-UI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
@@ -48,7 +48,7 @@ export default function Review() {
         <ListItem className={classes.listItem}>
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" className={classes.total}>
-            $34.06
+            00.00LKR
           </Typography>
         </ListItem>
       </List>

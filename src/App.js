@@ -59,6 +59,8 @@ function App() {
 
           <Route path = '/Checkout' component={Checkout}/>
 
+          <Route path = '/Navbar' component = {Navbar}/>
+
      
 
         </Switch>
