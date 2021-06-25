@@ -1,9 +1,12 @@
 import React from 'react';
 // import './Cards.css';
 import CardItems from './CardItems';
+import Album from './component/Auction/Album'
 
+<Album/>
 function Cards() {
   return (
+   
     <div className='cards'>
       <h1>Open Your Lid and Start to Bid.!</h1>
       
@@ -27,16 +30,7 @@ function Cards() {
               
             />
            
-            <CardItems
             
-            src='images/img-5.jpg'
-            _id='AUction ID: A02'
-            name= 'Name: Dimond'
-            carate='Carate: 3'
-            reviews='Review: '
-            description='Description: Uncut'
-            label='Diamond'
-              />
           </ul>
 
           <CardItems

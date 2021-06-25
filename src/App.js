@@ -19,6 +19,7 @@ import Dashboard from './components/Admin_Dashboard/Dashboard'
 import AddressForm from './components/Checkout/AddressForm'
 import Checkout from './components/Checkout/Checkout'
 import GemDetails from './components/Auction/GemDetails'
+import Album from './components/Auction/AuctionList'
 
 
 function App() {
@@ -63,6 +64,8 @@ function App() {
           <Route path = '/Navbar' component = {Navbar}/>
 
           <Route path = '/GemDetails' component={GemDetails}/>
+
+          <Route pathe = '/Album' component = {Album}/>
 
      
 
