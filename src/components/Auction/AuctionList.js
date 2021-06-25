@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [9];
+const cards = [9,9,9,9,9,9,9,9,9,9,9,9,9,9];
 
 export default function Album() {
   const classes = useStyles();
@@ -109,7 +109,7 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    // image="https://source.unsplash.com/random"
+                    image="https://source.unsplash.com/random"
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>

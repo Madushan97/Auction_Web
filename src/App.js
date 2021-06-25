@@ -18,6 +18,7 @@ import SignInSide from './components/Login/LoginPage'
 import Dashboard from './components/Admin_Dashboard/Dashboard'
 import AddressForm from './components/Checkout/AddressForm'
 import Checkout from './components/Checkout/Checkout'
+import GemDetails from './components/Auction/GemDetails'
 
 
 function App() {
@@ -60,6 +61,8 @@ function App() {
           <Route path = '/Checkout' component={Checkout}/>
 
           <Route path = '/Navbar' component = {Navbar}/>
+
+          <Route path = '/GemDetails' component={GemDetails}/>
 
      
 
