@@ -11,22 +11,30 @@ import Form from './components/signup/Form'
 import Cards from './components/Cards'
 import DailyDeals from './components/pages/DailyDeals'
 import LoginPage from './components/Login/LoginPage'
+
 import AuctionList from './components/Auction/AuctionCard'
-import SignUp from './components/Registration/SignUp'
 import AuctionCard from './components/Auction/AuctionCard'
+
+import SignUp from './components/Registration/SignUp'
 import SignInSide from './components/Login/LoginPage'
+
 import Dashboard from './components/Admin_Dashboard/Dashboard'
 import AddressForm from './components/Checkout/AddressForm'
 import Checkout from './components/Checkout/Checkout'
 import GemDetails from './components/Auction/GemDetails'
 import CardView from './components/Auction/CardView'
-import User_homepage from './components/User/User_HomePage'
+
+import User_Homepage from './components/User/User_Homepage'
+import UserNavBar from './components/User/UserNavBar'
+import UserSidebar from './components/User/UserSidebar'
+
 
 
 
 function App() {
   return (
     <>
+
     {/* all of the routers */}
     <Router>
         <Navbar/>
@@ -69,7 +77,13 @@ function App() {
           {/* Deatails of the particular auction */}
           <Route path = '/CardView' component = {CardView}/>
           {/* User Home page */}
-          <Route path = '/User_homepage' component= {User_homepage}/>
+          <Route path = '/UserNavBar' component= {UserNavBar}/>
+
+          <Route path = '/User_Homepage' component = {User_Homepage}/>
+
+          <Route path = '/UserSidebar' component = {UserSidebar}/>
+
+    
 
        
    

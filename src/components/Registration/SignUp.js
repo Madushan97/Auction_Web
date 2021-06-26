@@ -14,8 +14,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import MuiAlert from '@material-ui/lab/Alert';
 import Snackbar from '@material-ui/core/Snackbar';
+import Navbar from '../Navbar';
+
+
 
 function Copyright() {
+
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
@@ -62,6 +66,9 @@ function Alert(props) {
 }
 
 export default function SignUp() {
+
+  
+
   
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
@@ -78,7 +85,10 @@ export default function SignUp() {
     setOpen(false);
   };
 
+ 
+<Navbar/>
   return (
+    
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <Grid item xs={false} sm={4} md={7} className={classes.image} />

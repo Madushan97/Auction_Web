@@ -1,11 +1,14 @@
 import React from 'react'
+import UserNavBar from './UserNavBar'
+import UserSidebar from './UserSidebar'
 
 function User_homepage() {
     return (
-        <div>
-            <p>Welcome to User...</p>
-        </div>
+        <>
+            <UserNavBar/>
+            <UserSidebar/>
+        </>
     )
 }
 
-export default User_homepage;
+export default User_homepage
