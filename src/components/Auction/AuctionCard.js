@@ -111,12 +111,25 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
+
+                    <Link href = '/CardView'>
                     <Button size="small" color="primary">
                       View
                     </Button>
+                    </Link>
+
+                    <Link>
                     <Button size="small" color="primary">
                       Bid
                     </Button>
+                    </Link>
+
+                    <Link>
+                    <Button size="small" color="primary">
+                      Rate
+                    </Button>
+                    </Link>
+
                   </CardActions>
                 </Card>
               </Grid>

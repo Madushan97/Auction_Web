@@ -128,6 +128,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Bid
                     </Button>
+                   
                   </CardActions>
                 </Card>
               </Grid>

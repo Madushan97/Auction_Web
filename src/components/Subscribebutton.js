@@ -1,29 +1,59 @@
 import React from 'react';
-import './Button.css';
-import {Link} from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
+import { makeStyles } from '@material-ui/core/styles';
 
 
-const STYLES = ['btn--primary', 'btn--outline'];
-const SIZES = ['btn--medium', 'btn--large'];
 
-export const Subscribebutton = ({children, type, onClick, buttonStyle, buttonSize}) => {
-    // if button has some styles then class will change to buttonStyle if there is something mentioned, if not 'btn--primary' will happen
-    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];        
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 
-    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];             
 
-    return(
-        <Link to='#' className='btn-mobile'>
-            <button className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-                onClick={onClick}
-                type={type}
-            >
-                {children}
-            </button>
-        </Link>
 
-        
-    )
-};
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '100%',
+    '& > * + *': {
+      marginTop: theme.spacing(2),
+    },
+  },
+  Button: {
 
-export default Subscribebutton;
+  }
+}));
+
+export default function CustomizedSnackbars(children, type, onClick, buttonStyle, buttonSize) {
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+           
+
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  return (
+    <div className={classes.root}>
+      <Button variant="outlined" onClick={handleClick} >
+        sUBSCRIBE
+      </Button>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success">
+          Subscription successfully!
+        </Alert>
+      </Snackbar>
+
+    </div>
+  );
+}

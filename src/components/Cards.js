@@ -1,9 +1,9 @@
 import React from 'react';
 // import './Cards.css';
 import CardItems from './CardItems';
-import Album from './component/Auction/Album'
 
-<Album/>
+
+
 function Cards() {
   return (
    
