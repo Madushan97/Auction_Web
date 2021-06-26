@@ -8,7 +8,7 @@ function Sell(){
     return(
          <>
 
-            <h2>Welcome to selling</h2>
+            <h2 align = 'center'>Welcome to selling</h2>
              
         </>   
     )

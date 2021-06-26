@@ -12,6 +12,8 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import MuiAlert from '@material-ui/lab/Alert';
+import Snackbar from '@material-ui/core/Snackbar';
 
 function Copyright() {
   return (
@@ -55,8 +57,26 @@ const useStyles = makeStyles((theme) => ({
   
 }));
 
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
 export default function SignUp() {
+  
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
 
   return (
     <Container component="main" maxWidth="xs">
@@ -125,15 +145,26 @@ export default function SignUp() {
               />
             </Grid>
           </Grid>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign Up
-          </Button>
+          
+            <Button
+              onClick = {handleClick}
+              href = ''
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              Sign Up
+            </Button>
+          
+
+          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+              <Alert onClose={handleClose} severity="success">
+                  successfully registered!
+              </Alert>
+          </Snackbar>
+
           <Grid container justify="flex-end">
             <Grid item>
               <Link href="/SignInSide" variant="body2">

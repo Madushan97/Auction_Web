@@ -6,7 +6,7 @@ import './App.css'
 import Home from './components/pages/Home'
 // import bid from './components/pages/Bid'
 import Sell from './components/pages/Sell'
-import Feedback from './components/Feedback'
+import Feedback from './components/Footer_Component/Feedback'
 import Form from './components/signup/Form'
 import Cards from './components/Cards'
 import DailyDeals from './components/pages/DailyDeals'
@@ -20,6 +20,8 @@ import AddressForm from './components/Checkout/AddressForm'
 import Checkout from './components/Checkout/Checkout'
 import GemDetails from './components/Auction/GemDetails'
 import CardView from './components/Auction/CardView'
+import User_homepage from './components/User/User_HomePage'
+
 
 
 function App() {
@@ -54,7 +56,7 @@ function App() {
           <Route path='/AuctionCard' component={AuctionCard}/>
 
           <Route path = '/SignInSide' component={SignInSide}/>
-
+          {/* Admin dashboard */}
           <Route path = '/Dashboard' component={Dashboard}/>
 
           <Route path = '/AddressForm' component = {AddressForm}/>
@@ -65,7 +67,11 @@ function App() {
 
           <Route path = '/GemDetails' component={GemDetails}/>
           {/* Deatails of the particular auction */}
-          <Route pathe = '/CardView' component = {CardView}/>
+          <Route path = '/CardView' component = {CardView}/>
+          {/* User Home page */}
+          <Route path = '/User_homepage' component= {User_homepage}/>
+
+       
    
 
      

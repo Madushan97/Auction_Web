@@ -26,11 +26,9 @@ function Cards() {
               reviews='Review: '
               description='Description: Uncut'
               label='Diamond'
-              
-              
+                            
             />
            
-            
           </ul>
 
           <CardItems

@@ -78,8 +78,6 @@ function Navbar() {
               </Link>
             </li>
 
-          
-
           </ul>
           {/* if button is true  */}
           {button && <LoginButton buttonStyle='btn--outline'>Log in</LoginButton>}

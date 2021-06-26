@@ -105,7 +105,9 @@ export default function SignInSide() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
+            {/* have to create an alert (success or not) */}
             <Button
+              href = '/User_HomePage'
               type="submit"
               fullWidth
               variant="contained"
