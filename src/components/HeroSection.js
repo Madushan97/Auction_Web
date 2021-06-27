@@ -19,7 +19,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
-          path="/SignUp"
+          path="/SignUpHomepage"
         >
           GET STARTED
         </GetStartedButton>

@@ -4,7 +4,7 @@ function GemDetails() {
     return (
         <div>
             <h1>
-                Wlecome to the party
+                Gem Details
             </h1>
         </div>
     )

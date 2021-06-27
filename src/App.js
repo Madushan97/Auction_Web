@@ -9,14 +9,14 @@ import Sell from './components/pages/Sell'
 import Feedback from './components/Footer_Component/Feedback'
 import Form from './components/signup/Form'
 import Cards from './components/Cards'
-import DailyDeals from './components/pages/DailyDeals'
+import DailyDeals from './components/pages/DailyDeal/DailyDeals'
 import LoginPage from './components/Login/LoginPage'
 
-import AuctionList from './components/Auction/AuctionCard'
-import AuctionCard from './components/Auction/AuctionCard'
+import AuctionList from './components/Auction/Auctions'
+import Auctions from './components/Auction/Auctions'
 
-import SignUp from './components/Registration/SignUp'
-import SignInSide from './components/Login/LoginPage'
+import SignUpHomepage from './components/Registration/SignUpHomepage'
+import LoginHomepage from './components/Login/LoginHomepage'
 
 import Dashboard from './components/Admin_Dashboard/Dashboard'
 import AddressForm from './components/Checkout/AddressForm'
@@ -26,7 +26,9 @@ import CardView from './components/Auction/CardView'
 
 import User_Homepage from './components/User/User_Homepage'
 import UserNavBar from './components/User/UserNavBar'
-import UserSidebar from './components/User/UserSidebar'
+import UserSideBar from './components/User/UserSideBar'
+
+import AuctionHomepage from './components/Auction/AuctionHomepage'
 
 
 
@@ -37,7 +39,7 @@ function App() {
 
     {/* all of the routers */}
     <Router>
-        <Navbar/>
+        {/* <Navbar/> */}
             
         <Switch>
           {/* home page connection */}
@@ -59,11 +61,11 @@ function App() {
           {/* Auction List that are available at the moment */}
           <Route path ='/AuctionList' component={AuctionList}/>
           {/* SignUp form */}
-          <Route path = '/SignUp' component={SignUp}/>
+          <Route path = '/SignUpHomepage' component={SignUpHomepage}/>
 
-          <Route path='/AuctionCard' component={AuctionCard}/>
+          <Route path='/Auctions' component={Auctions}/>
 
-          <Route path = '/SignInSide' component={SignInSide}/>
+          <Route path = '/LoginHomepage' component={LoginHomepage}/>
           {/* Admin dashboard */}
           <Route path = '/Dashboard' component={Dashboard}/>
 
@@ -81,7 +83,15 @@ function App() {
 
           <Route path = '/User_Homepage' component = {User_Homepage}/>
 
-          <Route path = '/UserSidebar' component = {UserSidebar}/>
+          <Route path = '/UserSideBar' component = {UserSideBar}/>
+
+          <Route path = 'SignUpHomepage' component={SignUpHomepage}/>
+
+          <Route path = '/Auctions' component ={Auctions}/>
+
+          <Route pathe = '/AuctionHomepage' component={AuctionHomepage}/>
+
+        
 
     
 

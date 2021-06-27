@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Cards.css'
+import Navbar from '../Navbar';
 // import CardItems from '../CardItems'
 
 
@@ -8,7 +9,7 @@ function Sell(){
     return(
          <>
 
-            <h2 align = 'center'>Welcome to selling</h2>
+           <Navbar/>
              
         </>   
     )

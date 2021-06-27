@@ -14,7 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import MuiAlert from '@material-ui/lab/Alert';
 import Snackbar from '@material-ui/core/Snackbar';
-import Navbar from '../Navbar';
+
 
 
 
@@ -64,12 +64,8 @@ const useStyles = makeStyles((theme) => ({
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
-
 export default function SignUp() {
 
-  
-
-  
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -85,8 +81,6 @@ export default function SignUp() {
     setOpen(false);
   };
 
- 
-<Navbar/>
   return (
     
     <Container component="main" maxWidth="xs">

@@ -3,7 +3,7 @@ import React from 'react'
 function CardView() {
     return (
         <div>
-            <h1>Hi</h1>
+            <h1>Card Details</h1>
         </div>
     )
 }

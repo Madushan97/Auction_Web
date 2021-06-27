@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
 
 const cards = [9,9,9,9,9,9,9,9,9,9,9,9,9,9];
 
-export default function Album() {
+export default function AuctionList() {
   const classes = useStyles();
 
   return (
