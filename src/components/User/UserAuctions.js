@@ -56,9 +56,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [9, 7,6,5,4,3,2,7,8,9,0,];
+const cards = [9, 7,6];
 
-export default function Auctions() {
+export default function UserAuctions() {
   const classes = useStyles();
 
   return (
@@ -70,12 +70,12 @@ export default function Auctions() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Welcome to Auctions
+              Bidding History
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
              {/*  */}
             </Typography>
-            {/* <div className={classes.heroButtons}>
+            <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
@@ -88,7 +88,7 @@ export default function Auctions() {
                   </Button>
                 </Grid>
               </Grid>
-            </div> */}
+            </div>
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">

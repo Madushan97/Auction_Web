@@ -75,7 +75,7 @@ export default function Auctions() {
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
              {/*  */}
             </Typography>
-            {/* <div className={classes.heroButtons}>
+            <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
@@ -88,7 +88,7 @@ export default function Auctions() {
                   </Button>
                 </Grid>
               </Grid>
-            </div> */}
+            </div>
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">

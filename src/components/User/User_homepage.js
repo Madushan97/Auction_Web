@@ -1,15 +1,16 @@
 import React from 'react'
-import { Navbar } from 'react-bootstrap'
-import UserNavBar from './UserNavBar'
+import UserDashboard from './UserDashboard'
+
 import UserSidebar from './UserSideBar'
+import User_Navbar from './User_Navbar'
 
 
 function User_homepage() {
     return (
         <>
-            <Navbar/>
-            <UserNavBar/>
-            {/* <UserSidebar/> */}
+            <User_Navbar/>
+            <UserDashboard/>
+            <UserSidebar/>
            
         </>
     )

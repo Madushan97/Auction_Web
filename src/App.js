@@ -29,7 +29,11 @@ import UserNavBar from './components/User/UserNavBar'
 import UserSideBar from './components/User/UserSideBar'
 
 import AuctionHomepage from './components/Auction/AuctionHomepage'
-
+import User_Navbar from './components/User/User_Navbar'
+import UserAuctions from './components/User/UserAuctions'
+import UserDashboard from './components/User/UserDashboard'
+import CreateAuction from './components/User/Auction/CreateAuction'
+import Just from './components/User/Just'
 
 
 
@@ -85,14 +89,21 @@ function App() {
 
           <Route path = '/UserSideBar' component = {UserSideBar}/>
 
-          <Route path = 'SignUpHomepage' component={SignUpHomepage}/>
+          <Route path = '/SignUpHomepage' component={SignUpHomepage}/>
 
           <Route path = '/Auctions' component ={Auctions}/>
 
-          <Route pathe = '/AuctionHomepage' component={AuctionHomepage}/>
+          <Route path = '/AuctionHomepage' component={AuctionHomepage}/>
 
+          <Route path = '/User_Navbar' component = {User_Navbar}/>
+
+          <Route path = '/UserAuctions' component = {UserAuctions}/>
+
+          <Route path = '/UserDashboard' component = {UserDashboard}/>
+
+          <Route path = '/CreateAuction' component = {CreateAuction}/>
         
-
+          <Route path = '/Just' component = {Just}/>
     
 
        
