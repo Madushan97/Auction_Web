@@ -32,8 +32,10 @@ import AuctionHomepage from './components/Auction/AuctionHomepage'
 import User_Navbar from './components/User/User_Navbar'
 import UserAuctions from './components/User/UserAuctions'
 import UserDashboard from './components/User/UserDashboard'
-import CreateAuction from './components/User/Auction/CreateAuction'
+import CreateAuctionForm from './components/User/Auction/CreateAuctionForm'
 import Just from './components/User/Just'
+import CreateAuction from './components/User/Auction/CreateAuction'
+
 
 
 
@@ -101,9 +103,13 @@ function App() {
 
           <Route path = '/UserDashboard' component = {UserDashboard}/>
 
-          <Route path = '/CreateAuction' component = {CreateAuction}/>
+          <Route path = '/CreateAuctionForm' component = {CreateAuctionForm}/>
         
           <Route path = '/Just' component = {Just}/>
+
+          <Route path = '/CreateAuction' component = {CreateAuction}/>
+
+         
     
 
        
