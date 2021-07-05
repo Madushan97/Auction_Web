@@ -22,7 +22,7 @@ import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications';
     export const mainListItems = (
   <div>
       <ListSubheader inset>Auctions</ListSubheader>
-    <ListItem button>
+    <ListItem button component = {Link} to='/CreateAuction'>
       <CreateIcon>
         <DashboardIcon />
       </CreateIcon>

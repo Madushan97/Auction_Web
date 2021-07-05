@@ -11,33 +11,30 @@ import Form from './components/signup/Form'
 import Cards from './components/Cards'
 import DailyDeals from './components/pages/DailyDeal/DailyDeals'
 import LoginPage from './components/Login/LoginPage'
-
 import AuctionList from './components/Auction/Auctions'
 import Auctions from './components/Auction/Auctions'
-
 import SignUpHomepage from './components/Registration/SignUpHomepage'
 import LoginHomepage from './components/Login/LoginHomepage'
-
 import Dashboard from './components/Admin_Dashboard/Dashboard'
 import AddressForm from './components/Checkout/AddressForm'
 import Checkout from './components/Checkout/Checkout'
 import GemDetails from './components/Auction/GemDetails'
 import CardView from './components/Auction/CardView'
-
 import User_Homepage from './components/User/User_Homepage'
 import UserNavBar from './components/User/UserNavBar'
 import UserSideBar from './components/User/UserSideBar'
-
 import AuctionHomepage from './components/Auction/AuctionHomepage'
 import User_Navbar from './components/User/User_Navbar'
 import UserAuctions from './components/User/UserAuctions'
 import UserDashboard from './components/User/UserDashboard'
 import CreateAuctionForm from './components/User/Auction/CreateAuctionForm'
-import Just from './components/User/Just'
+
 import CreateAuction from './components/User/Auction/CreateAuction'
 
-
-
+import GemStatus from './components/User/Auction/GemStatus'
+import GemWeight from './components/User/Auction/GemWeight'
+import GemAmount from './components/User/Auction/GemAmount'
+import GemImageUpload from './components/User/Auction/GemImageUpload'
 
 function App() {
   return (
@@ -105,9 +102,17 @@ function App() {
 
           <Route path = '/CreateAuctionForm' component = {CreateAuctionForm}/>
         
-          <Route path = '/Just' component = {Just}/>
+          <Route path = '/GemImageUpload' component = {GemImageUpload}/>
 
           <Route path = '/CreateAuction' component = {CreateAuction}/>
+
+        
+
+          <Route path = '/GemStatus' component = {GemStatus}/>
+
+          <Route path = '/GemWeight' component = {GemWeight}/>
+
+          <Route path = '/GemAmount' component = {GemAmount}/>
 
          
     
