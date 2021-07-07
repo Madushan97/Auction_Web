@@ -29,7 +29,7 @@ import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications';
       <ListItemText primary="Create Auction" />
     </ListItem>
 
-    <ListItem button>
+    <ListItem button >
       <SettingsApplicationsIcon>
         <DashboardIcon />
       </SettingsApplicationsIcon>

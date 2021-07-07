@@ -35,6 +35,10 @@ import GemStatus from './components/User/Auction/GemStatus'
 import GemWeight from './components/User/Auction/GemWeight'
 import GemAmount from './components/User/Auction/GemAmount'
 import GemImageUpload from './components/User/Auction/GemImageUpload'
+import ManageAuctionHomePage from './components/User/ManageAuction/ManageAuctionHomePage'
+import UserDetails from './components/User/ManageAuction/UserDetails'
+import Address from './components/User/ManageAuction/Address'
+
 
 function App() {
   return (
@@ -106,7 +110,7 @@ function App() {
 
           <Route path = '/CreateAuction' component = {CreateAuction}/>
 
-        
+          <Route path = '/ManageAuctionHomePage' component = {ManageAuctionHomePage}/>
 
           <Route path = '/GemStatus' component = {GemStatus}/>
 
@@ -114,7 +118,9 @@ function App() {
 
           <Route path = '/GemAmount' component = {GemAmount}/>
 
-         
+          <Route path = '/UserDetails' component = {UserDetails}/>
+
+          <Route path = '/Address' component = {Address}/>
     
 
        

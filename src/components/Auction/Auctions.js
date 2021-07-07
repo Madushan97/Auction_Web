@@ -64,7 +64,7 @@ export default function Auctions() {
 
   return (
     <React.Fragment>
-      <Navbar/>
+      {/* <Navbar/> */}
       <CssBaseline />
       
       <main>
@@ -77,20 +77,7 @@ export default function Auctions() {
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
              {/*  */}
             </Typography>
-            {/* <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    CREATE AUCTION
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
-                </Grid>
-              </Grid>
-            </div> */}
+            
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
