@@ -28,9 +28,7 @@ import User_Navbar from './components/User/User_Navbar'
 import UserAuctions from './components/User/UserAuctions'
 import UserDashboard from './components/User/UserDashboard'
 import CreateAuctionForm from './components/User/Auction/CreateAuctionForm'
-
 import CreateAuction from './components/User/Auction/CreateAuction'
-
 import GemStatus from './components/User/Auction/GemStatus'
 import GemWeight from './components/User/Auction/GemWeight'
 import GemAmount from './components/User/Auction/GemAmount'
