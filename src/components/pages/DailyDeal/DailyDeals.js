@@ -1,4 +1,5 @@
 import React from 'react'
+import DailyDealsHome from '../../Daily Deals/DailyDealsHome';
 import Navbar from '../../Navbar';
 
 function DailyDeals() {
@@ -6,6 +7,8 @@ function DailyDeals() {
         <>
             <Navbar/>
             <h2 align = 'center' >Welcome to Daily Deals</h2>
+
+            <DailyDealsHome/>
         </>
     )
 }
