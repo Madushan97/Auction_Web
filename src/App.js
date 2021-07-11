@@ -39,6 +39,7 @@ import Address from './components/User/ManageAuction/Address'
 import SpecialCard from './components/Daily Deals/SpecialCard'
 import DailyDealsHome from './components/Daily Deals/DailyDealsHome'
 
+
 function App() {
   return (
     <>
@@ -124,6 +125,8 @@ function App() {
           <Route path = '/SpecialCard' component ={SpecialCard}/>
        
           <Route path = '/DailyDealsHome' component = {DailyDealsHome}/>
+
+         
 
      
 
