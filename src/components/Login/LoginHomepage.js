@@ -11,4 +11,4 @@ function LoginHomepage() {
     )
 }
 
-export default LoginHomepage
+export default LoginHomepage;

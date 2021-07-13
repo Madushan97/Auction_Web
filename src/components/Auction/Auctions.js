@@ -10,13 +10,14 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import Navbar from '../Navbar'
 
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color="inherit" href="/">
         Online Auction
       </Link>{' '}
       {new Date().getFullYear()}
@@ -64,7 +65,7 @@ export default function Auctions() {
 
   return (
     <React.Fragment>
-      {/* <Navbar/> */}
+      <Navbar/>
       <CssBaseline />
       
       <main>

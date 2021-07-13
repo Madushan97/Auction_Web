@@ -3,11 +3,10 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   withStyles,
-  
 } from '@material-ui/core/styles';
-
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import Button from '@material-ui/core/Button';
-
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import CreateNewFolderRoundedIcon from '@material-ui/icons/CreateNewFolderRounded';
 import DeleteRoundedIcon from '@material-ui/icons/DeleteRounded';
 
@@ -60,8 +59,20 @@ export default function UserDetails() {
     <form className={classes.root} noValidate autoComplete="off">
       {/* user details */}
         <div className='User Details' align = 'center' >
-          <h3 align='center'>Create a User Account</h3>
-          
+
+          {/* exit button */}
+        <div align='left'>
+          <br/>
+            <Button variant="contained" color="primary" disableElevation>
+                <ExitToAppIcon/>
+                    Back
+            </Button>
+        </div>
+         
+          <h3 align='center'>  <PersonAddIcon fontSize='large'/> Create a User Account</h3>
+
+          {/* name section */}
+
             <ValidationTextField
                 className={classes.margin}
                 label="First Name"
@@ -80,6 +91,10 @@ export default function UserDetails() {
                 id="validation-outlined-input"
             />
 
+          </div>
+          {/* contact details */}
+          <div align='center'>
+
             <ValidationTextField
                 className={classes.margin}
                 label="Email"
@@ -88,18 +103,21 @@ export default function UserDetails() {
                 defaultValue=""
                 id="validation-outlined-input"
             />
-      </div>
+
+            <ValidationTextField
+                className={classes.margin}
+                label="Phone Number"
+                required
+                variant="outlined"
+                defaultValue=""
+                id="validation-outlined-input"
+            />
+
+          </div>
      
+     {/* address lines */}
       <div align = 'center'>
 
-      <ValidationTextField
-                className={classes.margin}
-                label="Address Line1"
-                required
-                variant="outlined"
-                defaultValue=""
-                id="validation-outlined-input"
-            />
             <ValidationTextField
                 className={classes.margin}
                 label="Address Line1"
@@ -110,12 +128,41 @@ export default function UserDetails() {
             />
             <ValidationTextField
                 className={classes.margin}
-                label="Zip code"
+                label="Address Line2"
                 required
                 variant="outlined"
                 defaultValue=""
                 id="validation-outlined-input"
             />
+
+            <div align='center'>
+
+                <ValidationTextField
+                    className={classes.margin}
+                    label="Zip code"
+                    required
+                    variant="outlined"
+                    defaultValue=""
+                    id="validation-outlined-input"
+                />
+            </div>
+
+            <div align = 'center'>
+
+            <form className={classes.container} noValidate>
+                  <TextField
+                    id="date"
+                    label="Birthday"
+                    type="date"
+                    defaultValue="2017-05-24"
+                    className={classes.textField}
+                    InputLabelProps={{
+                      shrink: true,
+                    }}
+                  />
+          </form>
+
+            </div>
       </div>
 
      
@@ -137,7 +184,7 @@ export default function UserDetails() {
       </div>
 
       <div>
-        <br/>
+            <br/>
       </div>
      
     

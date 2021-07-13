@@ -35,7 +35,6 @@ import GemAmount from './components/User/Auction/GemAmount'
 import GemImageUpload from './components/User/Auction/GemImageUpload'
 import ManageAuctionHomePage from './components/User/ManageAuction/ManageAuctionHomePage'
 import UserDetails from './components/User/ManageAuction/UserDetails'
-import Address from './components/User/ManageAuction/Address'
 import SpecialCard from './components/Daily Deals/SpecialCard'
 import DailyDealsHome from './components/Daily Deals/DailyDealsHome'
 
@@ -120,7 +119,7 @@ function App() {
 
           <Route path = '/UserDetails' component = {UserDetails}/>
 
-          <Route path = '/Address' component = {Address}/>
+     
     
           <Route path = '/SpecialCard' component ={SpecialCard}/>
        

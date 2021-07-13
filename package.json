@@ -25,6 +25,7 @@
     "react-perfect-scrollbar": "^1.5.8",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-shopping-cart": "^1.9.5",
     "reactjs-popup": "^2.0.4",
     "recharts": "^2.0.9",
     "validator": "^13.6.0",
