@@ -38,6 +38,8 @@ import UserDetails from './components/User/ManageAuction/UserDetails'
 import SpecialCard from './components/Daily Deals/SpecialCard'
 import DailyDealsHome from './components/Daily Deals/DailyDealsHome'
 import Chatbot from './components/ChatBot/Chatbot'
+import Bid from './components/User/Auction/Bid'
+import UserWinningAuction from './components/User/UserWinningAuction'
 
 
 function App() {
@@ -127,7 +129,9 @@ function App() {
        
           <Route path = '/DailyDealsHome' component = {DailyDealsHome}/>
 
-         
+          <Route path = '/Bid' component = {Bid}/>
+
+          <Route path = '/UserWinningAuction' component = {UserWinningAuction}/>
 
      
 

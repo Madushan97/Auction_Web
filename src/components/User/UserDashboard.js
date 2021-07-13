@@ -11,7 +11,8 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems, SecondListItems, ThirdListItems, FourthListItems } from './UserDashboardList';
-import UserAuctions from './UserAuctions';
+import BiddingHistory from './BiddingHistory';
+import UserWinningAuction from './UserWinningAuction';
 
 const drawerWidth = 240;
 
@@ -139,7 +140,9 @@ export default function UserDashboard() {
             
           </Grid>
           <Box pt={4}>
-            <UserAuctions/>
+          <UserWinningAuction/>
+            <BiddingHistory/>
+          
      
           </Box>
         </Container>

@@ -2,13 +2,13 @@ import React from 'react'
 import UserDashboard from './UserDashboard'
 
 import UserSidebar from './UserSideBar'
-import User_Navbar from './User_Navbar'
+import UserNavbar from './User_Navbar'
 
 
 function User_homepage() {
     return (
         <>
-            <User_Navbar/>
+            <UserNavbar/>
             <UserDashboard/>
             <UserSidebar/>
            

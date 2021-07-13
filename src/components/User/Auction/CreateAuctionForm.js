@@ -272,17 +272,31 @@ export default function CreateAuctionForm() {
       <GemStatus/>
       </div>
 
-      <div >
-          <GemWeight/>
-          </div>
           <div >
-          <GemAmount/>
+              <GemWeight/>
           </div>
+
+          <div >
+              <GemAmount/>
+          </div>
+
+
+          <div>
+           <div class="mb-3" >
+              <label for="validationTextarea">Description</label>
+              <textarea class="form-control is-valid" id="validationTextarea" placeholder="Required Gem Description" required ></textarea>
+              <div class="valid-feedback">
+                    Please enter a message in the textarea.
+              </div>
+           </div>
+      </div>
      
 
       <div >
         <GemImageUpload/>
       </div>
+
+      
 
       <div className='Creat Auction' align = 'center'>
       <Button variant="contained" color="primary" disableElevation>

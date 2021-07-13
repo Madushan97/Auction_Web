@@ -10,21 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import Navbar from '../Navbar';
 
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="/">
-        Online Auction
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -67,15 +54,13 @@ export default function UserAuctions() {
     <React.Fragment>
     
       <CssBaseline />
-
-      <Navbar/>
       
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Bidding History
+              Winning Auctions
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
              {/*  */}
@@ -87,11 +72,7 @@ export default function UserAuctions() {
                     CREATE AUCTION
                   </Button>
                 </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
-                </Grid>
+                
               </Grid>
             </div>
           </Container>
@@ -117,17 +98,13 @@ export default function UserAuctions() {
                   </CardContent>
                   <CardActions>
 
-                    <Link href = '/'>
+                    <Link href = '/Bid'>
                     <Button size="small" color="primary">
-                      View
+                        Checkout
                     </Button>
                     </Link>
 
-                    <Link href='/Bid'>
-                    <Button size="small" color="primary">
-                      Bid
-                    </Button>
-                    </Link>
+                    
 
                     <Link>
                     <Button size="small" color="primary">
@@ -150,7 +127,7 @@ export default function UserAuctions() {
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           {/* Something here to give the footer a purpose! */}
         </Typography>
-        <Copyright />
+      
       </footer>
       {/* End footer */}
     </React.Fragment>

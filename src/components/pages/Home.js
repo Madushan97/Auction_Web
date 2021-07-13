@@ -14,7 +14,6 @@ function Home(){
         <>  <Navbar/>         
             <HeroSection/>
             <Cards/>
-        
             <Footer/>
         </>
     )

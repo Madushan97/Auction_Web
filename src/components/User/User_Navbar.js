@@ -5,7 +5,7 @@ import './User_Navbar.css';
 
 
 
-function User_Navbar() {
+function UserNavbar() {
 // toggle the state of this button
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -89,4 +89,4 @@ function User_Navbar() {
   );
 }
 
-export default User_Navbar;
+export default UserNavbar;
