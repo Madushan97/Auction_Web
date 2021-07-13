@@ -37,6 +37,7 @@ import ManageAuctionHomePage from './components/User/ManageAuction/ManageAuction
 import UserDetails from './components/User/ManageAuction/UserDetails'
 import SpecialCard from './components/Daily Deals/SpecialCard'
 import DailyDealsHome from './components/Daily Deals/DailyDealsHome'
+import Chatbot from './components/ChatBot/Chatbot'
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
 
     {/* all of the routers */}
     <Router>
+      <Chatbot/>
         {/* <Navbar/> */}
             
         <Switch>
@@ -119,7 +121,7 @@ function App() {
 
           <Route path = '/UserDetails' component = {UserDetails}/>
 
-     
+          <Route path = '/Chatbot' component = {Chatbot}/>
     
           <Route path = '/SpecialCard' component ={SpecialCard}/>
        

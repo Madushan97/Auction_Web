@@ -165,10 +165,6 @@ export default function UserDetails() {
             </div>
       </div>
 
-     
-
-      
-
       <div className='Creat Auction' align = 'center'>
       <Button variant="contained" color="primary" disableElevation>
           <CreateNewFolderRoundedIcon/>

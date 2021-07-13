@@ -5,6 +5,7 @@ import HeroSection from '../HeroSection'
 import Cards from '../Cards'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
+import Chatbot from '../ChatBot/Chatbot'
 
 
 
@@ -13,7 +14,7 @@ function Home(){
         <>  <Navbar/>         
             <HeroSection/>
             <Cards/>
-            
+        
             <Footer/>
         </>
     )

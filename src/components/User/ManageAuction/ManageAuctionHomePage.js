@@ -9,9 +9,7 @@ function ManageAuctionHomePage() {
             <Navbar/>
             <UserDetails/>
         </div>
-        {/* <div>
-            <address/>
-        </div> */}
+       
         </>
     )
 }

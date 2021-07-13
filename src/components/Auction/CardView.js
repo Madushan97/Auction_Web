@@ -9,7 +9,7 @@ import {
   cartReducer,
   setCartCurrency
 } from "react-shopping-cart";
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.css";
 import "animate.css/animate.min.css";
 import "font-awesome/css/font-awesome.min.css";
