@@ -102,13 +102,13 @@ export default function Auctions() {
                   </CardContent>
                   <CardActions>
 
-                    <Link href = '/CardView'>
+                    <Link href = '#'>
                     <Button size="small" color="primary">
                       View
                     </Button>
                     </Link>
 
-                    <Link>
+                    <Link href='PlaceBid'>
                     <Button size="small" color="primary">
                       Bid
                     </Button>

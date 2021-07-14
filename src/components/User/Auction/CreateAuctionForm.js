@@ -290,6 +290,23 @@ export default function CreateAuctionForm() {
               </div>
            </div>
       </div>
+
+      <div>
+      <br/>
+      <form className={classes.container} noValidate>
+  <TextField
+    id="datetime-local"
+    label="Next appointment"
+    type="datetime-local"
+    defaultValue="2017-05-24T10:30"
+    className={classes.textField}
+    InputLabelProps={{
+      shrink: true,
+    }}
+  />
+</form>
+<br/>
+      </div>
      
 
       <div >
@@ -299,7 +316,7 @@ export default function CreateAuctionForm() {
       
 
       <div className='Creat Auction' align = 'center'>
-      <Button variant="contained" color="primary" disableElevation>
+      <Button href='/User_Homepage' variant="contained" color="primary" disableElevation>
           <CreateNewFolderRoundedIcon/>
            Create Auction
       </Button>

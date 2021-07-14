@@ -40,8 +40,8 @@ import DailyDealsHome from './components/Daily Deals/DailyDealsHome'
 import Chatbot from './components/ChatBot/Chatbot'
 import Bid from './components/User/Auction/Bid'
 import UserWinningAuction from './components/User/UserWinningAuction'
-
-
+import PlaceBid from './components/Bid/PlaceBid'
+ 
 function App() {
   return (
     <>
@@ -133,7 +133,7 @@ function App() {
 
           <Route path = '/UserWinningAuction' component = {UserWinningAuction}/>
 
-     
+          <Route path = '/PlaceBid' component = {PlaceBid}/>
 
         </Switch>
         

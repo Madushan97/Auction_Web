@@ -117,13 +117,13 @@ export default function UserAuctions() {
                   </CardContent>
                   <CardActions>
 
-                    <Link href = '/'>
+                    <Link href = '#'>
                     <Button size="small" color="primary">
                       View
                     </Button>
                     </Link>
 
-                    <Link href='/Bid'>
+                    <Link href='/PlaceBid'>
                     <Button size="small" color="primary">
                       Bid
                     </Button>
