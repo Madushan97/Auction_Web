@@ -10,20 +10,20 @@ import {
   TextField
 } from '@material-ui/core';
 import MainNavbar from '../MainNavbar';
-import AccountProfile from './AccountProfile';
+
 
 const states = [
   {
-    value: 'alabama',
-    label: 'Alabama'
+    value: 'Rathnapura',
+    label: 'Rathnapura'
   },
   {
-    value: 'new-york',
-    label: 'New York'
+    value: 'Kegalle',
+    label: 'Kegalle'
   },
   {
-    value: 'san-francisco',
-    label: 'San Francisco'
+    value: 'Kandy',
+    label: 'Kandy'
   }
 ];
 
@@ -34,7 +34,7 @@ const AccountProfileDetails = (props) => {
     email: 'demo@devias.io',
     phone: '',
     state: 'Alabama',
-    country: 'USA'
+    country: 'SRI LANKA'
   });
 
   const handleChange = (event) => {
@@ -51,7 +51,7 @@ const AccountProfileDetails = (props) => {
       {...props}
     >
         <MainNavbar/>
-        <AccountProfile/>
+        {/* <AccountProfile/> */}
       <Card>
         <CardHeader
           subheader="The information can be edited"

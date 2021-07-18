@@ -1,6 +1,7 @@
 import { Link as RouterLink } from 'react-router-dom';
 import { AppBar, Toolbar } from '@material-ui/core';
-import LayersIcon from '@material-ui/icons/Layers';
+import HomeIcon from '@material-ui/icons/Home';
+import OpenMenu from './OpenMenu'
 
 const MainNavbar = (props) => (
   <AppBar
@@ -8,9 +9,22 @@ const MainNavbar = (props) => (
     {...props}
   >
     <Toolbar sx={{ height: 64 }}>
-      <RouterLink to="/">
-        <LayersIcon />
-      </RouterLink>
+      
+
+      {/* <RouterLink to="/Dashboard">
+        <HomeIcon />
+        
+      </RouterLink> */}
+
+        <div align = 'center'>
+                 <OpenMenu/>
+        </div>
+      
+
+      
+
+      
+
     </Toolbar>
   </AppBar>
 );

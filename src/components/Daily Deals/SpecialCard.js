@@ -53,7 +53,7 @@ export default function SpecialCard() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            R
+            A
           </Avatar>
         }
         
@@ -68,7 +68,7 @@ export default function SpecialCard() {
       
       <CardMedia
         className={classes.media}
-        image="./gem-alexandrite-prem-2-191019.jpg"
+        image={require('./alexandrite.jpg')}
         title="ALEXANDRITE"
       />
       

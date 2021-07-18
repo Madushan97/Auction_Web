@@ -7,7 +7,6 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PeopleIcon from '@material-ui/icons/People';
 import EventIcon from '@material-ui/icons/Event';
-import LayersIcon from '@material-ui/icons/Layers';
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import { Link } from "react-router-dom";
 import SettingsIcon from '@material-ui/icons/Settings';
