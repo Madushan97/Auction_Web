@@ -6,74 +6,76 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PeopleIcon from '@material-ui/icons/People';
-import BarChartIcon from '@material-ui/icons/BarChart';
+import EventIcon from '@material-ui/icons/Event';
 import LayersIcon from '@material-ui/icons/Layers';
-import AssignmentIcon from '@material-ui/icons/Assignment';
-import {Link} from 'react-router-dom'
-import GavelIcon from '@material-ui/icons/Gavel';
-import AssessmentRoundedIcon from '@material-ui/icons/AssessmentRounded';
-import DashboardRoundedIcon from '@material-ui/icons/DashboardRounded';
-import AccountBalanceRoundedIcon from '@material-ui/icons/AccountBalanceRounded';
-import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
-import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
-import LayersRoundedIcon from '@material-ui/icons/LayersRounded';
+import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import { Link } from "react-router-dom";
+import SettingsIcon from '@material-ui/icons/Settings';
+import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';
+import DateRangeIcon from '@material-ui/icons/DateRange';
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
+
+
 
 export const mainListItems = (
   <div>
     <ListItem button>
-      <DashboardRoundedIcon>
+      <ListItemIcon>
         <DashboardIcon />
-      </DashboardRoundedIcon>
+      </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
-
     <ListItem button>
-      <AssessmentRoundedIcon>
-        <DashboardIcon />
-      </AssessmentRoundedIcon>
-      <ListItemText primary="Analysis" />
-    </ListItem>
-
-    <ListItem button>
-      <AccountBalanceRoundedIcon>
-        <DashboardIcon />
-      </AccountBalanceRoundedIcon>
-      <ListItemText primary="Auction" />
-    </ListItem>
-
-    <ListItem button component = {Link} to='/AuctionList'>
-      <GavelIcon>
-        <DashboardIcon />
-      </GavelIcon>
-      <ListItemText button  primary="   Bids" />
-    </ListItem>
-
-    <ListItem button>
-      <ShoppingCartRoundedIcon>
+      <ListItemIcon>
         <ShoppingCartIcon />
-      </ShoppingCartRoundedIcon>
+      </ListItemIcon>
       <ListItemText primary="Orders" />
     </ListItem>
-
     <ListItem button>
-      <PeopleAltRoundedIcon>
+      <ListItemIcon>
         <PeopleIcon />
-      </PeopleAltRoundedIcon>
+      </ListItemIcon>
       <ListItemText primary="Customers" />
     </ListItem>
 
+    
+    
+   
+
     <ListItem button>
-      <AssessmentRoundedIcon>
-        <BarChartIcon />
-      </AssessmentRoundedIcon>
-      <ListItemText primary="Reports" />
+      <ListItemIcon>
+        <GroupAddIcon />
+      </ListItemIcon>
+      <ListItemText primary="Create Account" />
     </ListItem>
 
     <ListItem button>
-      <LayersRoundedIcon>
-        <LayersIcon />
-      </LayersRoundedIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemIcon>
+        <CreateNewFolderIcon />
+      </ListItemIcon>
+      <ListItemText primary="Create Auction" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <AssignmentIndIcon />
+      </ListItemIcon>
+      <ListItemText primary="Register" />
+    </ListItem>
+
+    <ListItem button component= {Link} to='/AccountProfileDetails'>
+      <ListItemIcon>
+        <SettingsIcon />
+      </ListItemIcon>
+      <ListItemText primary="Account Setting" />
+    </ListItem>
+
+    <ListItem button>
+      <ListItemIcon>
+        <ErrorOutlineIcon />
+      </ListItemIcon>
+      <ListItemText primary="Error" />
     </ListItem>
 
   </div>
@@ -84,24 +86,21 @@ export const secondaryListItems = (
     <ListSubheader inset>Saved reports</ListSubheader>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <DateRangeIcon />
       </ListItemIcon>
       <ListItemText primary="Current month" />
     </ListItem>
-
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <EventIcon />
       </ListItemIcon>
       <ListItemText primary="Last quarter" />
     </ListItem>
-
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <CalendarTodayIcon />
       </ListItemIcon>
       <ListItemText primary="Year-end sale" />
     </ListItem>
-
   </div>
 );

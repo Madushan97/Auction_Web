@@ -41,6 +41,9 @@ import Chatbot from './components/ChatBot/Chatbot'
 import Bid from './components/User/Auction/Bid'
 import UserWinningAuction from './components/User/UserWinningAuction'
 import PlaceBid from './components/Bid/PlaceBid'
+import MainNavbar from './components/Admin_Dashboard/MainNavbar'
+import AccountProfileDetails from './components/Admin_Dashboard/Account/AccountProfileDetails'
+import AccountProfile from './components/Admin_Dashboard/Account/AccountProfile'
  
 function App() {
   return (
@@ -134,6 +137,12 @@ function App() {
           <Route path = '/UserWinningAuction' component = {UserWinningAuction}/>
 
           <Route path = '/PlaceBid' component = {PlaceBid}/>
+
+          <Route path = '/MainNavbar' component ={MainNavbar}/>
+
+          <Route path = '/AccountProfileDetails' component = {AccountProfileDetails}/>
+
+          <Route path = 'AccountProfile' component = {AccountProfile}/>
 
         </Switch>
         

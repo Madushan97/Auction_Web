@@ -20,9 +20,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
-
-
-// import Deposits from './Deposits';
+import Deposits from './Deposits';
 import Orders from './Orders';
 
 function Copyright() {
@@ -148,7 +146,7 @@ export default function Dashboard() {
             Dashboard
           </Typography>
           <IconButton color="inherit">
-            <Badge badgeContent={8} color="secondary">
+            <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
             </Badge>
           </IconButton>
@@ -181,18 +179,23 @@ export default function Dashboard() {
                 <Chart />
               </Paper>
             </Grid>
+
             {/* Recent Deposits */}
-            {/* <Grid item xs={12} md={4} lg={3}>
+            <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
                 <Deposits />
               </Paper>
-            </Grid> */}
+            </Grid>
+    
+            
             {/* Recent Orders */}
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Orders />
               </Paper>
             </Grid>
+
+            
           </Grid>
           <Box pt={4}>
             <Copyright />
