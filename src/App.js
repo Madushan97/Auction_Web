@@ -46,6 +46,7 @@ import AccountProfileDetails from './components/Admin_Dashboard/Account/AccountP
 import AccountProfile from './components/Admin_Dashboard/Account/AccountProfile'
 import OpenMenu  from './components/Admin_Dashboard/OpenMenu'
 
+
 function App() {
   return (
     <>
@@ -143,9 +144,11 @@ function App() {
 
           <Route path = '/AccountProfileDetails' component = {AccountProfileDetails}/>
 
-          <Route path = 'AccountProfile' component = {AccountProfile}/>
+          <Route path = '/AccountProfile' component = {AccountProfile}/>
 
           <Route path = '/OpenMenu' component = {OpenMenu}/>
+
+        
 
         </Switch>
         

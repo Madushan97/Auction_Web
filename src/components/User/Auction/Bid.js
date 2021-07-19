@@ -48,7 +48,7 @@ class App extends PureComponent {
     product: {
       name: "Gem Name",
       id: "ipad-case",
-      path: "/shop/ipad-case/",
+      path: "#",
       properties: {
         color: [
           "red",
@@ -66,7 +66,7 @@ class App extends PureComponent {
       propertiesToShowInCart: ["color"],
       prices: { LKR: 30000 },
       currency: "GBP",
-      imageSrc: "1-483x321.jpeg"
+      imageSrc: "alexandrite.jpeg"
     },
     getProductLocalization: getDefaultLocalization("product", "en", {
       ...iPadCaseLocalization,

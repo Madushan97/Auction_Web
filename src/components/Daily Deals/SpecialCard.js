@@ -16,6 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Button from '@material-ui/core/Button';
+// import Timer from '../CountDownTimer/Timer'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -103,6 +104,7 @@ export default function SpecialCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
         <Button  variant="contained" >Current Price : 12000LKR</Button>
+        {/* <Timer/> */}
           <Typography paragraph>Method:</Typography>
           <Typography paragraph>
           Often described by gem aficionados as “emerald by day, ruby by night,” 

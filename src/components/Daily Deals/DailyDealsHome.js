@@ -10,9 +10,6 @@ function DailyDealsHome() {
                 <SpecialCard/>
                 </grid>
 
-                <grid item xs = {6}>
-                <SpecialCard/>
-                </grid>
                  
             </div>
     

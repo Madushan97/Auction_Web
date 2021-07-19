@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import CreateNewFolderRoundedIcon from '@material-ui/icons/CreateNewFolderRounded';
 import DeleteRoundedIcon from '@material-ui/icons/DeleteRounded';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -166,7 +167,7 @@ export default function UserDetails() {
       </div>
 
       <div className='Creat Auction' align = 'center'>
-      <Button variant="contained" color="primary" disableElevation>
+      <Button variant="contained" color="primary" disableElevation component= {Link} to='/ManageAuctionHomePage'>
           <CreateNewFolderRoundedIcon/>
            Create Account
       </Button>

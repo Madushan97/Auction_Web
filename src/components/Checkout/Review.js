@@ -7,13 +7,13 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Grid from '@material-ui/core/Grid';
 
 const products = [
-  { name: 'Product 1', desc: 'A nice thing', price: '00.00LKR' },
+  { name: 'Cat Eye ', desc: 'Uncut', price: '30,000.00LKR' },
   
 ];
-const addresses = ['1 Material-UI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
+const addresses = ['274/1, "sirisevana"', 'Higgashena', 'Kuruvita', '70500', 'Sri Lanka'];
 const payments = [
   { name: 'Card type', detail: 'Visa' },
-  { name: 'Card holder', detail: 'Mr John Smith' },
+  { name: 'Card holder', detail: 'Mr Madushan Nipuna' },
   { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
   { name: 'Expiry date', detail: '04/2024' },
 ];
@@ -48,7 +48,7 @@ export default function Review() {
         <ListItem className={classes.listItem}>
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" className={classes.total}>
-            00.00LKR
+            30,000.00LKR
           </Typography>
         </ListItem>
       </List>
@@ -57,7 +57,7 @@ export default function Review() {
           <Typography variant="h6" gutterBottom className={classes.title}>
             Shipping
           </Typography>
-          <Typography gutterBottom>John Smith</Typography>
+          <Typography gutterBottom>Madushan Nipuna</Typography>
           <Typography gutterBottom>{addresses.join(', ')}</Typography>
         </Grid>
         <Grid item container direction="column" xs={12} sm={6}>

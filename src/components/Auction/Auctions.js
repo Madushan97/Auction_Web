@@ -11,6 +11,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Navbar from '../Navbar'
+// import CountDownTimer from '../CountDownTimer/CountDownTimer'
+// import Timer from '../CountDownTimer/Timer'
 
 
 function Copyright() {
@@ -101,6 +103,7 @@ export default function Auctions() {
                     </Typography>
                   </CardContent>
                   <CardActions>
+                    {/* <CountDownTimer/> */}
 
                     <Link href = '#'>
                     <Button size="small" color="primary">
@@ -119,6 +122,12 @@ export default function Auctions() {
                       Rate
                     </Button>
                     </Link>
+
+                    {/* <Button size="small" color="primary"> */}
+                      {/* <Timer/> */}
+                    {/* </Button> */}
+
+
 
                   </CardActions>
                 </Card>
