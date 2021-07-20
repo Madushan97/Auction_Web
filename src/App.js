@@ -47,6 +47,7 @@ import AccountProfile from './components/Admin_Dashboard/Account/AccountProfile'
 import OpenMenu  from './components/Admin_Dashboard/OpenMenu'
 import Mailer from './components/Feedback/mailer'
 import Composemail from './components/Feedback/Composemail'
+import CreateAuction1 from './components/Extra/CreateAuction1'
 
 function App() {
   return (
@@ -152,6 +153,8 @@ function App() {
           <router path = '/Mailer' component = {Mailer}/>
 
           <Route path = '/Composemail' component = {Composemail}/>
+
+          <Route path = '/CreateAuction1' component = {CreateAuction1}/>
 
         
 

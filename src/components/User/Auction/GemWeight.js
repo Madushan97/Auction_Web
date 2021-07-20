@@ -24,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
 export default function GemWeight() {
   const classes = useStyles();
   const [values, setValues] = React.useState({
@@ -50,7 +52,7 @@ export default function GemWeight() {
             id="outlined-adornment-weight"
             value={values.weight}
             onChange={handleChange('weight')}
-            endAdornment={<InputAdornment position="end">g</InputAdornment>}
+            endAdornment={<InputAdornment position="end">carat</InputAdornment>}
             aria-describedby="outlined-weight-helper-text"
             inputProps={{
               'aria-label': 'weight',

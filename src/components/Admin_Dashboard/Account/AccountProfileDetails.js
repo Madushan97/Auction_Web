@@ -1,7 +1,8 @@
 import { useState } from 'react';
+
 import {
   Box,
-  Button,
+  // Button,
   Card,
   CardContent,
   CardHeader,
@@ -10,6 +11,7 @@ import {
   TextField
 } from '@material-ui/core';
 import MainNavbar from '../MainNavbar';
+// import AccountProfile from './AccountProfile';
 
 
 const states = [
@@ -29,10 +31,10 @@ const states = [
 
 const AccountProfileDetails = (props) => {
   const [values, setValues] = useState({
-    firstName: 'Katarina',
-    lastName: 'Smith',
-    email: 'demo@devias.io',
-    phone: '',
+    firstName: 'Madushan',
+    lastName: 'Nipuna',
+    email: 'madushannipuna1997@gmail.com',
+    phone: ' ',
     state: 'Alabama',
     country: 'SRI LANKA'
   });
@@ -45,16 +47,26 @@ const AccountProfileDetails = (props) => {
   };
 
   return (
+    
     <form
       autoComplete="off"
       noValidate
       {...props}
     >
+
+                <div className='container border'
+                    style={{marginTop: '50px',
+                    width: '50%',
+                    // border-radius: '5px',
+                    backgroundImage: `url(mail1.jpg)`,
+                    ackgroungPosition: 'center',
+                    
+                    backgroundSize: 'cover'}}>
         <MainNavbar/>
         {/* <AccountProfile/> */}
       <Card>
         <CardHeader
-          subheader="The information can be edited"
+          
           title="Profile"
         />
         <Divider />
@@ -119,7 +131,7 @@ const AccountProfileDetails = (props) => {
                 label="Phone Number"
                 name="phone"
                 onChange={handleChange}
-                type="number"
+                required
                 value={values.phone}
                 variant="outlined"
               />
@@ -175,14 +187,24 @@ const AccountProfileDetails = (props) => {
             p: 2
           }}
         >
-          <Button
+          <div align = 'center'>
+          {/* <Button
             color="primary"
             variant="contained"
           >
+           
             Save details
-          </Button>
+          </Button> */}
+          <button type="button" class="btn btn-primary btn-lg btn-block">Save Details</button>
+
+          
+
+          {/* <button type="reset" class="btn btn-secondary btn-lg btn-block">Reset</button> */}
+          <button type="button" class="btn btn-danger btn-lg btn-block" value = 'reset'>Cancel</button>
+          </div>
         </Box>
       </Card>
+      </div>
     </form>
   );
 };

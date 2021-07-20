@@ -40,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
   selectEmpty: {
     marginTop: theme.spacing(2),
   },
+  textarea: {
+    width: 30,
+    height: 10,
+  }
 }));
 
 const ValidationTextField = withStyles({
@@ -70,9 +74,18 @@ export default function CreateAuctionForm() {
    
   return (
     <form className={classes.root} noValidate autoComplete="off">
+
+  <div className='container border'
+                    style={{marginTop: '50px',
+                    width: '50%',
+                    // border-radius: '5px',
+                    backgroundImage: `url(mail1.jpg)`,
+                    ackgroungPosition: 'center',
+                    backgroundSize: 'cover'}}>
+
       {/* user details */}
         <div className='User Details' >
-          <h3 align='center'>User Details</h3>
+          <h5 align='center'>User Details</h5>
           
             <ValidationTextField
                 className={classes.margin}
@@ -104,8 +117,7 @@ export default function CreateAuctionForm() {
 
       {/* auction details */}
       <div className='Auction Details' >
-      <h3 align = 'center'>Auction Details</h3>
-        
+           <h5 align = 'center'>Auction Details</h5>
       </div>
 
       <div >
@@ -116,8 +128,8 @@ export default function CreateAuctionForm() {
                 id="demo-simple-select-outlined"
                 value={gemname}
                 onChange={handleChange}
-                label="Gem Name"
-          >
+                label="Gem Name" >
+        
 
           <MenuItem value="">
               <em>None</em>
@@ -284,7 +296,14 @@ export default function CreateAuctionForm() {
           <div>
            <div class="mb-3" >
               <label for="validationTextarea">Description</label>
-              <textarea class="form-control is-valid" id="validationTextarea" placeholder="Required Gem Description" required ></textarea>
+
+              <textarea class="form-control is-valid"
+                        id="validationTextarea"
+                        placeholder="Required Gem Description" 
+                        required >
+
+              </textarea>
+
               <div class="valid-feedback">
                     Please enter a message in the textarea.
               </div>
@@ -294,32 +313,31 @@ export default function CreateAuctionForm() {
       <div>
       <br/>
       <form className={classes.container} noValidate>
-  <TextField
-    id="datetime-local"
-    label="Next appointment"
-    type="datetime-local"
-    defaultValue="2017-05-24T10:30"
-    className={classes.textField}
-    InputLabelProps={{
-      shrink: true,
-    }}
-  />
-</form>
-<br/>
+        <TextField
+          id="datetime-local"
+          label="Next appointment"
+          type="datetime-local"
+          defaultValue="2017-05-24T10:30"
+          className={classes.textField}
+          InputLabelProps={{
+            shrink: true,
+          }}
+        />
+      </form>
+      <br/>
+
       </div>
      
-
       <div >
         <GemImageUpload/>
       </div>
-
-      
 
       <div className='Creat Auction' align = 'center'>
       <Button href='/User_Homepage' variant="contained" color="primary" disableElevation>
           <CreateNewFolderRoundedIcon/>
            Create Auction
       </Button>
+
             <br/>
             <br/>
       <Button variant="contained" color="secondary" disableElevation>
@@ -334,7 +352,7 @@ export default function CreateAuctionForm() {
       </div>
      
     
-      
+      </div>
     </form>
   );
 }

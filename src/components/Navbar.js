@@ -34,11 +34,11 @@ function Navbar() {
   return (
     <>
    
-      <nav className='navbar'>
-        <div className='navbar-container'>
+      <nav className='navbar' >
+        <div className='navbar-container' >
 
           {/* if click on the text it will close the menu */}
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu} >
             Online Auction
             <i class='fab fa-typo3' />
           </Link>
@@ -67,7 +67,7 @@ function Navbar() {
             <li className='nav-item'>
               {/* navigation bar Sell button */}
               <Link to='/sell' className='nav-links' onClick={closeMobileMenu}>
-                Sell
+                Special Auctions
               </Link>
             </li>
 

@@ -64,7 +64,7 @@ export default function UserDetails() {
           {/* exit button */}
         <div align='left'>
           <br/>
-            <Button variant="contained" color="primary" disableElevation>
+            <Button variant="contained" color="primary" disableElevation component = {Link} to = '/Dashboard'>
                 <ExitToAppIcon/>
                     Back
             </Button>

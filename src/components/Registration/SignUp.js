@@ -87,6 +87,16 @@ export default function SignUp() {
       <CssBaseline />
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
       
+      <div className='container border'
+                    style={{marginTop: '50px',
+                    width: '150%',
+                    // border-radius: '5px',
+                    backgroundImage: `url(mail1.jpg)`,
+                    ackgroungPosition: 'center',
+                    
+                    backgroundSize: 'cover'}}>
+
+                    
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
@@ -215,11 +225,17 @@ export default function SignUp() {
               </Link>
             </Grid>
           </Grid>
+          
         </form>
+        
       </div>
+      
       <Box mt={5}>
         <Copyright />
       </Box>
+
+      </div>
+      
     </Container>
   );
 }
