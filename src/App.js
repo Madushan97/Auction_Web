@@ -45,7 +45,8 @@ import MainNavbar from './components/Admin_Dashboard/MainNavbar'
 import AccountProfileDetails from './components/Admin_Dashboard/Account/AccountProfileDetails'
 import AccountProfile from './components/Admin_Dashboard/Account/AccountProfile'
 import OpenMenu  from './components/Admin_Dashboard/OpenMenu'
-
+import Mailer from './components/Mail/mailer'
+import Composemail from './components/Mail/Composemail'
 
 function App() {
   return (
@@ -147,6 +148,10 @@ function App() {
           <Route path = '/AccountProfile' component = {AccountProfile}/>
 
           <Route path = '/OpenMenu' component = {OpenMenu}/>
+
+          <router path = '/Mailer' component = {Mailer}/>
+
+          <Route path = '/Composemail' component = {Composemail}/>
 
         
 

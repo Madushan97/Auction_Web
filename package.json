@@ -13,6 +13,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "email-validator": "^2.0.4",
+    "emailjs-com": "^3.2.0",
     "express": "^4.17.1",
     "formik": "^2.2.9",
     "material-ui-icons": "^1.0.0-beta.36",

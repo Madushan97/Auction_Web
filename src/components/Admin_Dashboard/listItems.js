@@ -15,8 +15,9 @@ import DateRangeIcon from '@material-ui/icons/DateRange';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
-
-
+import AddIcon from '@material-ui/icons/Add';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
 export const mainListItems = (
   <div>
@@ -50,13 +51,14 @@ export const mainListItems = (
       <ListItemText primary="Create Account" />
     </ListItem>
 
-    <ListItem button>
+    <ListItem button component= {Link} to='/CreateAuction'>
       <ListItemIcon>
         <CreateNewFolderIcon />
       </ListItemIcon>
       <ListItemText primary="Create Auction" />
     </ListItem>
-    <ListItem button>
+
+    <ListItem button component= {Link} to='/SignUpHomepage'>
       <ListItemIcon>
         <AssignmentIndIcon />
       </ListItemIcon>
@@ -101,5 +103,32 @@ export const secondaryListItems = (
       </ListItemIcon>
       <ListItemText primary="Year-end sale" />
     </ListItem>
-  </div>
+    </div>
+)
+
+export const thirdListItems = (
+  <div>
+    <ListSubheader inset>E-mail</ListSubheader>
+
+    <ListItem button component = {Link} to = '/Composemail'>
+      <ListItemIcon>
+        <AddIcon />
+      </ListItemIcon>
+      <ListItemText primary="Compose" />
+    </ListItem>
+
+    <ListItem button>
+      <ListItemIcon>
+        <ArrowDownwardIcon />
+      </ListItemIcon>
+      <ListItemText primary="Inbox" />
+    </ListItem>
+
+    <ListItem button>
+      <ListItemIcon>
+        <ArrowUpwardIcon />
+      </ListItemIcon>
+      <ListItemText primary="Sent" />
+    </ListItem>
+    </div>
 );
