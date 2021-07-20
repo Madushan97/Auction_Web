@@ -110,7 +110,7 @@ export const thirdListItems = (
   <div>
     <ListSubheader inset>E-mail</ListSubheader>
 
-    <ListItem button component = {Link} to = '/Composemail'>
+    <ListItem button component = {Link} to = '#'>
       <ListItemIcon>
         <AddIcon />
       </ListItemIcon>

@@ -11,10 +11,17 @@ const Mailer = () => {
         e.preventDefault();
         
         emailjs.sendForm('service_fzct538', 'template_bza4vxk', e.target, 'user_aVJd9QNVcrVdefFvZ1mbx')
-        .then(res=>{
-            console.log(res);
-        })
-        .catch(err=>console.log(err))
+        // .then(res=>{
+        //     console.log(res);
+        // })
+        // .catch(err=>console.log(err))
+
+        .then((result)=>{
+            console.log(result.text);
+        }, (error)=>{
+            console.log(error.text);
+        });
+        e.target.reset();
 
         
     }
@@ -29,16 +36,17 @@ const Mailer = () => {
 
                
             <div><ContactMailIcon fontSize="large" align= "center"/></div>
-            <h1 style={{marginTop: '25px'}}> Compose Email</h1>
+            <h1 style={{marginTop: '25px'}}> Feedbacks</h1>
+
             <form className='row' style={{margin: '25px 85px 75px 100px'}} onSubmit ={sendEmail}>
                 <label>Name</label>
-                <input type = "text" name = " name" className='form-control'/>
+                <input type = "text" placeholder='Enter your name'name = " name" className='form-control'/>
 
                 <label>Email</label>
-                <input type = "email" name = " user_email" className='form-control'/>
+                <input type = "email" placeholder='Enter your Email' name = " user_email" className='form-control'/>
 
                 <label>Message</label>
-                <textarea name = 'message' rows = '4' className='form-control'/>
+                <textarea name = 'message' placeholder='Enter your feedbacks here' rows = '4' className='form-control'/>
                 <input type = "submit" value = " SEND" className='form-control btn btn-primary' style={{marginTop: '30px'}}/>
                 <input type = "reset" value = " RESET" className='form-control btn btn-secondary' style={{marginTop: '30px'}}/>
 
