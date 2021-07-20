@@ -44,7 +44,7 @@ export const mainListItems = (
     
    
 
-    <ListItem button>
+    <ListItem button component = {Link} to = '/ManageAuctionHomepage'>
       <ListItemIcon>
         <GroupAddIcon />
       </ListItemIcon>

@@ -45,8 +45,8 @@ import MainNavbar from './components/Admin_Dashboard/MainNavbar'
 import AccountProfileDetails from './components/Admin_Dashboard/Account/AccountProfileDetails'
 import AccountProfile from './components/Admin_Dashboard/Account/AccountProfile'
 import OpenMenu  from './components/Admin_Dashboard/OpenMenu'
-import Mailer from './components/Mail/mailer'
-import Composemail from './components/Mail/Composemail'
+import Mailer from './components/Feedback/mailer'
+import Composemail from './components/Feedback/Composemail'
 
 function App() {
   return (

@@ -135,13 +135,52 @@ export default function SignUp() {
                 variant="outlined"
                 required
                 fullWidth
+                id="address"
+                label="Address"
+                name="address"
+                autoComplete="address"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
                 name="password"
                 label="Password"
                 type="password"
                 id="password"
                 autoComplete="current-password"
               />
-            </Grid>
+               </Grid>
+
+               <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="zipcode"
+                label="Zip code"
+                type="zipcode"
+                id="zipcode"
+                autoComplete="current-password"
+              />
+               </Grid>
+
+              <Grid item xs={12}>
+                  <TextField
+                    id="date"
+                    label="Birthday"
+                    type="date"
+                    defaultValue="2017-05-24"
+                    className={classes.textField}
+                    InputLabelProps={{
+                      shrink: true,
+                    }}
+                  />
+              </Grid>
+
+           
             <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" />}
