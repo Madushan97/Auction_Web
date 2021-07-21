@@ -11,7 +11,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Navbar from '../Navbar'
-
+import Timer from '../CountDownTimer/Timer'
 
 
 function Copyright() {
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [9, 7,6,5,4,3,2,7,8,9,0,];
+const cards = [9, 7,6,5,];
 
 export default function Auctions() {
   const classes = useStyles();
@@ -122,6 +122,7 @@ export default function Auctions() {
                     </Button>
                     </Link>
 
+                    <Timer/>
                     
 
 

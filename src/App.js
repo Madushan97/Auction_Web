@@ -48,6 +48,9 @@ import OpenMenu  from './components/Admin_Dashboard/OpenMenu'
 import Mailer from './components/Feedback/mailer'
 import Composemail from './components/Feedback/Composemail'
 import CreateAuction1 from './components/Extra/CreateAuction1'
+import Timer from './components/CountDownTimer/Timer'
+import CountDownTimer from './components/CountDownTimer/CountDownTimer'
+ 
 
 function App() {
   return (
@@ -156,7 +159,9 @@ function App() {
 
           <Route path = '/CreateAuction1' component = {CreateAuction1}/>
 
-        
+          <Route path = '/Timer' component = {Timer}/>
+
+          <Route path = '/CountDownTimer' component ={CountDownTimer}/>
 
         </Switch>
         
