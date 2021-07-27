@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignInSide() {
+export default function AdminLogin() {
   
   const classes = useStyles();
 
@@ -75,7 +75,7 @@ export default function SignInSide() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-           Welcome to User Login
+            Welcome to Admin Login
           </Typography>
           <form className={classes.form} noValidate>
             <TextField
@@ -106,14 +106,14 @@ export default function SignInSide() {
             />
             {/* have to create an alert (success or not) */}
             <Button
-              href = '/User_HomePage'
+              href = '/Dashboard'
               type="submit"
               fullWidth
               variant="contained"
               color="primary"
               className={classes.submit}
             >
-              User Sign In
+              Admin Sign In
             </Button>
             <Grid container>
               <Grid item xs>
@@ -122,9 +122,7 @@ export default function SignInSide() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/Signup" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
+                
               </Grid>
             </Grid>
             <Box mt={1}>

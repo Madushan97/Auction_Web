@@ -20,12 +20,17 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems, thirdListItems,fourthListItems,fifthListItems,sixthListItems } from './SidebarList';
 import UserWinningAuction from './UserWinningAuction'
 import UserAuctions from './UserAuctions';
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
+import SettingsIcon from '@material-ui/icons/Settings';
+import FeedbackIcon from '@material-ui/icons/Feedback';
+
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="#">
+      <Link color="inherit" href="/">
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -57,6 +62,11 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
   },
+  body: {
+    // backgroundimage: url("img-2.jpg"),
+    
+  },
+
   appBarShift: {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
@@ -127,25 +137,54 @@ export default function Dashboard() {
 //   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
-    <div className={classes.root}>
+    <div  className={classes.root} >
       <CssBaseline />
       <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
-        <Toolbar className={classes.toolbar}>
+        <Toolbar  className={classes.toolbar}>
+
+          
           <IconButton
             edge="start"
             color="inherit"
+            align="right"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
           >
             <MenuIcon />
           </IconButton>
-          
-          <IconButton color="inherit">
+
+          <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
+            Welcome back <InsertEmoticonIcon/> 
+          </Typography>
+
+           {/* feedbacks */}
+           <IconButton  href = '/Composemail' color="inherit">
+              <FeedbackIcon />
+          </IconButton>
+
+          {/* notification button */}
+          <IconButton  color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
             </Badge>
           </IconButton>
+
+          {/* account setting */}
+          <IconButton  href = '/AccountProfileDetails' color="inherit">
+              <SettingsIcon />
+          </IconButton>
+
+          {/* Logout */}
+          <IconButton  href = '/' color="inherit">
+              <PowerSettingsNewIcon />
+          </IconButton>
+       
+      
+         
+
+          
+
         </Toolbar>
       </AppBar>
       <Drawer

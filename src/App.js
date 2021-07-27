@@ -50,7 +50,10 @@ import Composemail from './components/Feedback/Composemail'
 import UserHomePage from './components/User/UserHomePage'
 import Timer from './components/CountDownTimer/Timer'
 import CountDownTimer from './components/CountDownTimer/CountDownTimer'
- 
+import LoginPortal from './components/LoginPortal'
+import AdminLoginHomepage from './components/Login/AdminLoginHomepage' 
+import AdminLogin from './components/Login/AdminLogin'
+import Cart from './components/User/Auction/Cart'
 
 function App() {
   return (
@@ -162,6 +165,14 @@ function App() {
           <Route path = '/Timer' component = {Timer}/>
 
           <Route path = '/CountDownTimer' component ={CountDownTimer}/>
+
+          <Route path = '/LoginPortal' component = {LoginPortal}/>
+
+          <Route path = '/AdminLoginHomepage' component = {AdminLoginHomepage}/>
+
+          <Route path = '/AdminLogin' component = {AdminLogin}/>
+
+          <Route path = '/Cart' component = {Cart}/>
 
         </Switch>
         

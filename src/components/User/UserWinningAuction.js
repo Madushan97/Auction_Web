@@ -85,8 +85,8 @@ export default function UserAuctions() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    // image="https://source.unsplash.com/random"
-                    title="Image title"
+                    image="img-2.jpg"
+                    title="Cat Eye"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -98,7 +98,7 @@ export default function UserAuctions() {
                   </CardContent>
                   <CardActions>
 
-                    <Link href = '/Bid'>
+                    <Link href = '/Cart'>
                     <Button size="small" color="primary">
                         Checkout
                     </Button>

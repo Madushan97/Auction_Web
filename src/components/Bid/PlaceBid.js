@@ -1,13 +1,15 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GavelIcon from '@material-ui/icons/Gavel';
-
+import Navbar from '../Navbar'
 
 
 function PlaceBid() {
+  
     return (
         
             <form>
+              <Navbar/>
         {/* form format */}
               <div className='container border'
                     style={{marginTop: '50px',

@@ -109,7 +109,7 @@ export default function UserAuctions() {
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                     Cat Eye
+                     Alexandrite
                     </Typography>
                     <Typography>
                     display a luminous band reminiscent of the eye of a cat; this particular quality is termed chatoyancy.

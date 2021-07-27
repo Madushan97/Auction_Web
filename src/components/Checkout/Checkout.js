@@ -13,10 +13,13 @@ import Typography from '@material-ui/core/Typography';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
-
+import Navbar from '../Navbar'
 
 function Copyright() {
+  
   return (
+    
+    
     
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
@@ -69,6 +72,7 @@ const useStyles = makeStyles((theme) => ({
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
 
 // for the connected 3 pages
+
 function getStepContent(step) {
   switch (step) {
     case 0:
@@ -97,14 +101,11 @@ export default function Checkout() {
   };
 
   return (
+    
     <React.Fragment>
       <CssBaseline />
       <AppBar position="absolute" color="default" className={classes.appBar}>
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            
-          </Typography>
-        </Toolbar>
+       <Navbar/>
       </AppBar>
       <main className={classes.layout}>
         <Paper className={classes.paper}>

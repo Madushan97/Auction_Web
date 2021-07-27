@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { LoginButton } from './Login/LoginButton';
+// import { LoginButton } from './Login/LoginButton';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import LoginPortal from './LoginPortal';
 
 
 
@@ -80,7 +81,8 @@ function Navbar() {
 
           </ul>
           {/* if button is true  */}
-          {button && <LoginButton buttonStyle='btn--outline'>Log in</LoginButton>}
+          
+          <LoginPortal />
         </div>
       </nav>
       

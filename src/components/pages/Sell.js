@@ -21,15 +21,13 @@ function Sell(){
                     <CardItems
                     
                         src='images/img-13.jpg'
-                
                         path='/CardDetails'
-
                         _id='AUction ID: A01'
                         name= 'Name: Alexandrite'
                         carate='Carate: 5'
                         reviews='Review: '
-                        description='Description: Uncut'
-                        label='Diamond'
+                        description='Description: Cut'
+                        label='Alexandrite'
                             
                     />
                 
@@ -38,9 +36,9 @@ function Sell(){
                         src='images/img-11.jpg'
                         _id='AUction ID: A03'
                         name= 'Name: Cat Eye'
-                        carate='Carate: 2'
+                        carate='Carate: 7'
                         reviews='Review: '
-                        description='Description: cut'
+                        description='Description: Uncut'
                         label='Cat Eye'
                         />
                     
@@ -49,9 +47,9 @@ function Sell(){
                         src='images/img-6.jpg'
                         _id='AUction ID: A04'
                         name= 'Name: Ruby'
-                        carate='Carate: 1'
+                        carate='Carate: 6'
                         reviews='Review: '
-                        description='Description: Uncut'
+                        description='Description: cut'
                         label='Ruby'
 
                     /> 
@@ -61,15 +59,16 @@ function Sell(){
 
                 <CardItems
                     
-                    src='images/img-5.jpg'
+                    src='images/img-14.jpg'
                     
-                        label='Spinel'
+                        label='Citrine'
                         _id='AUction ID: A05'
-                        name= 'Name: Spinel'
+                        name= 'Name: Citrine'
                         carate='Carate: 3'
                         reviews='Review: '
-                        description='Description: Uncut'
-                
+                        description='Description: Cut'
+                        
+
                     />
 
                 <CardItems
@@ -78,55 +77,9 @@ function Sell(){
                         _id='Auction ID :A06'
                         name= 'Name : Rose Quartz'
                         size='carate : 5'
-                        description='Description: Uncut'
+                        description='Description: Cut'
                         label='Rose Quartz'
                     />
-          
-
-           
-
-                <CardItems
-                            
-                            src='images/img-4.jpg'
-                            _id='Auction ID :A06'
-                            name= 'Name : Rose Quartz'
-                            size='carate : 5'
-                            description='Description: Uncut'
-                            label='Rose Quartz'
-                        />
-                        </ul>
-
-                <ul className='cards__items'>
-
-                <CardItems
-                            
-                            src='images/img-4.jpg'
-                            _id='Auction ID :A06'
-                            name= 'Name : Rose Quartz'
-                            size='carate : 5'
-                            description='Description: Uncut'
-                            label='Rose Quartz'
-                        />
-
-                <CardItems
-                            
-                            src='images/img-4.jpg'
-                            _id='Auction ID :A06'
-                            name= 'Name : Rose Quartz'
-                            size='carate : 5'
-                            description='Description: Uncut'
-                            label='Rose Quartz'
-                        />
-
-                <CardItems
-                            
-                            src='images/img-4.jpg'
-                            _id='Auction ID :A06'
-                            name= 'Name : Rose Quartz'
-                            size='carate : 5'
-                            description='Description: Uncut'
-                            label='Rose Quartz'
-                        />
            </ul>
 
            

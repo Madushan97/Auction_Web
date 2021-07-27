@@ -24,7 +24,7 @@ function Cards() {
                   name= 'Name: Dimond'
                   carate='Carate: 5'
                   reviews='Review: '
-                  description='Description: Uncut'
+                  description='Description: Cut'
                   label='Diamond'
 
                       
@@ -36,9 +36,9 @@ function Cards() {
                 src='images/img-11.jpg'
                 _id='AUction ID: A03'
                 name= 'Name: Cat Eye'
-                carate='Carate: 2'
+                carate='Carate: 6'
                 reviews='Review: '
-                description='Description: cut'
+                description='Description: Uncut'
                 label='Cat Eye'
                   />
               
@@ -49,7 +49,7 @@ function Cards() {
                 name= 'Name: Ruby'
                 carate='Carate: 1'
                 reviews='Review: '
-                description='Description: Uncut'
+                description='Description: Cut'
                 label='Ruby'
 
               />
@@ -59,12 +59,12 @@ function Cards() {
             
             src='images/img-13.jpg'
             
-                label='Spinel'
+                label='Alexandrite'
                 _id='AUction ID: A05'
                 name= 'Name: Alexandrite'
                 carate='Carate: 3'
                 reviews='Review: '
-                description='Description: Uncut'
+                description='Description: Cut'
            
               />
 
