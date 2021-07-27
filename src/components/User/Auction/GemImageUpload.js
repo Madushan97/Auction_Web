@@ -82,11 +82,17 @@ class GemImageUpload extends Component {
 			Choose Your Gem Images!
 			</h3>
 			<div>
+				<div>
 				<input type="file" onChange={this.onFileChange} />
+				</div>
+
+				<div>
 				<button onClick={this.onFileUpload}>
+				
 				Upload!
                 <CloudUploadIcon />
 				</button>
+				</div>
                 
 			</div>
 		{this.fileData()}

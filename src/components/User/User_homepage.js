@@ -1,19 +1,18 @@
 import React from 'react'
-import UserDashboard from './UserDashboard'
+import UserHomePage from './UserHomePage'
 
-import UserSidebar from './UserSideBar'
-import UserNavbar from './User_Navbar'
 
 
 function User_homepage() {
     return (
         <>
-            <UserNavbar/>
-            <UserDashboard/>
-            <UserSidebar/>
+            
+
+            <UserHomePage/>
+           
            
         </>
     )
 }
 
-export default User_homepage
+export default User_homepage;

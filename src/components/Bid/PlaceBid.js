@@ -80,7 +80,7 @@ function PlaceBid() {
         {/* submit/reset/cancel buttons */}
                 <div align='center'>
                 
-                  <a href="/User_Homepage" class="btn btn-success btn-lg active btn-block"  type="submit" role="button" aria-pressed="true">Place Bid</a>
+                  <a href="/" class="btn btn-success btn-lg active btn-block"  type="submit" role="button" aria-pressed="true">Place Bid</a>
                   <input class="btn btn-secondary btn-lg active btn-block" type="reset" value="Reset"></input>
                   <button type="button" class="btn btn-danger btn-lg active btn-block">Cancel</button>
                 

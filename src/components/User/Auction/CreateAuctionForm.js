@@ -13,17 +13,22 @@ import GemStatus from './GemStatus';
 import GemWeight from './GemWeight'
 import GemAmount from './GemAmount';
 import GemImageUpload from './GemImageUpload';
-import Button from '@material-ui/core/Button';
-
-import CreateNewFolderRoundedIcon from '@material-ui/icons/CreateNewFolderRounded';
-import DeleteRoundedIcon from '@material-ui/icons/DeleteRounded';
+import PersonIcon from '@material-ui/icons/Person';
+import GavelIcon from '@material-ui/icons/Gavel';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    // to the textfield
     '& .MuiTextField-root': {
       margin: theme.spacing(2),
-      width: '30ch',
+      width: '90ch',
     },
+    // Gem selection
+    '& .MuiSelect-root' : {
+      margin: theme.spacing(2),
+      width: '80ch',
+    },
+   
     
   },
   formControl: {
@@ -32,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   MenuItem: {
     margin: theme.spacing(2),
-    minWidth: 100,
+    minWidth: 80,
   },
   OutlinedInput: {
     minWidth: 100,
@@ -85,7 +90,7 @@ export default function CreateAuctionForm() {
 
       {/* user details */}
         <div className='User Details' >
-          <h5 align='center'>User Details</h5>
+          <h5 align='center'><PersonIcon style={{fontSize:60}}/>User Details</h5>
           
             <ValidationTextField
                 className={classes.margin}
@@ -93,7 +98,9 @@ export default function CreateAuctionForm() {
                 required
                 variant="outlined"
                 defaultValue=""
-                id="validation-outlined-input"
+                inputProps={{ maxLength: 15 }}
+             
+                id="validation-outlined-input "
             />
 
             <ValidationTextField
@@ -102,22 +109,29 @@ export default function CreateAuctionForm() {
                 required
                 variant="outlined"
                 defaultValue=""
+                inputProps={{ maxLength: 15 }}
                 id="validation-outlined-input"
             />
+        
 
             <ValidationTextField
                 className={classes.margin}
                 label="Email"
+                fullWidth
+                display="flex"
+                size="medium"
                 required
                 variant="outlined"
                 defaultValue=""
-                id="validation-outlined-input"
+                maxLength={12}
+                id="validation-outlined-input-standard-full-width"
             />
       </div>
+   
 
       {/* auction details */}
       <div className='Auction Details' >
-           <h5 align = 'center'>Auction Details</h5>
+           <h5 align = 'center'><GavelIcon style={{fontSize:60}}/>Auction Details</h5>
       </div>
 
       <div >
@@ -305,7 +319,7 @@ export default function CreateAuctionForm() {
               </textarea>
 
               <div class="valid-feedback">
-                    Please enter a message in the textarea.
+                    Please enter a description regarding your Gem.
               </div>
            </div>
       </div>
@@ -333,17 +347,21 @@ export default function CreateAuctionForm() {
       </div>
 
       <div className='Creat Auction' align = 'center'>
-      <Button href='/User_Homepage' variant="contained" color="primary" disableElevation>
+      {/* <Button href='/User_Homepage' variant="contained" color="primary" disableElevation>
           <CreateNewFolderRoundedIcon/>
            Create Auction
-      </Button>
+      </Button> */}
 
             <br/>
             <br/>
-      <Button variant="contained" color="secondary" disableElevation>
+
+            <a href="/User_Homepage" class="btn btn-success btn-lg active btn-block"  type="submit" role="button" aria-pressed="true">Create Auction</a>
+            <button type="button" class="btn btn-danger btn-lg active btn-block">Cancel</button>
+
+      {/* <Button variant="contained" color="secondary" disableElevation>
           <DeleteRoundedIcon/>
           Cancel
-      </Button>
+      </Button> */}
 
       </div>
 

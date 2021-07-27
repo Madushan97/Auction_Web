@@ -10,21 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import Navbar from '../Navbar';
 
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="/">
-        Online Auction
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -68,7 +54,7 @@ export default function UserAuctions() {
     
       <CssBaseline />
 
-      <Navbar/>
+     
       
       <main>
         {/* Hero unit */}
@@ -82,7 +68,7 @@ export default function UserAuctions() {
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
-                <Grid item>
+                {/* <Grid item>
                   <Button variant="contained" color="primary">
                     CREATE AUCTION
                   </Button>
@@ -91,7 +77,7 @@ export default function UserAuctions() {
                   <Button variant="outlined" color="primary">
                     Secondary action
                   </Button>
-                </Grid>
+                </Grid> */}
               </Grid>
             </div>
           </Container>
@@ -117,13 +103,13 @@ export default function UserAuctions() {
                   </CardContent>
                   <CardActions>
 
-                    <Link href = '/'>
+                    <Link href = '#'>
                     <Button size="small" color="primary">
                       View
                     </Button>
                     </Link>
 
-                    <Link href='/Bid'>
+                    <Link href='/PlaceBid'>
                     <Button size="small" color="primary">
                       Bid
                     </Button>
@@ -143,15 +129,10 @@ export default function UserAuctions() {
         </Container>
       </main>
       {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          {/* Footer */}
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          {/* Something here to give the footer a purpose! */}
-        </Typography>
-        <Copyright />
-      </footer>
+     
+        
+        
+      
       {/* End footer */}
     </React.Fragment>
   );

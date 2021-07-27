@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
+    
   },
   margin: {
     margin: theme.spacing(2),
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
   },
   textField: {
-    width: '1ch',
+    width: '50ch',
   },
 }));
 

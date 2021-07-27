@@ -20,7 +20,7 @@ function Copyright() {
     
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="/">
+      <Link color="inherit" href="/User_HomePage">
         Online Auction
       </Link>{' '}
       {new Date().getFullYear()}

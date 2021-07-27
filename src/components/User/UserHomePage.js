@@ -4,15 +4,35 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Drawer from '@material-ui/core/Drawer';
 import Box from '@material-ui/core/Box';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
+import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
+import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
+import Link from '@material-ui/core/Link';
+import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import { mainListItems, SecondListItems, ThirdListItems, FourthListItems } from './UserDashboardList';
-import BiddingHistory from './BiddingHistory';
-import UserWinningAuction from './UserWinningAuction';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import { mainListItems, secondaryListItems, thirdListItems,fourthListItems,fifthListItems,sixthListItems } from './SidebarList';
+import UserWinningAuction from './UserWinningAuction'
+import UserAuctions from './UserAuctions';
+
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="#">
+        Your Website
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 const drawerWidth = 240;
 
@@ -95,22 +115,39 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function UserDashboard() {
+export default function Dashboard() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
-  // const handleDrawerOpen = () => {
-  //   setOpen(true);
-  // };
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
   const handleDrawerClose = () => {
     setOpen(false);
   };
-  // const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+//   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
     <div className={classes.root}>
       <CssBaseline />
-      
-
+      <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
+        <Toolbar className={classes.toolbar}>
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
+          >
+            <MenuIcon />
+          </IconButton>
+          
+          <IconButton color="inherit">
+            <Badge badgeContent={4} color="secondary">
+              <NotificationsIcon />
+            </Badge>
+          </IconButton>
+        </Toolbar>
+      </AppBar>
       <Drawer
         variant="permanent"
         classes={{
@@ -126,24 +163,40 @@ export default function UserDashboard() {
         <Divider />
         <List>{mainListItems}</List>
         <Divider />
-        <List>{SecondListItems}</List>
-        <Divider />
-        <List>{ThirdListItems}</List>
-        <Divider />
-        <List>{FourthListItems}</List>
+        <List>{secondaryListItems}</List>
+        <List>{thirdListItems}</List>
+        <List>{fourthListItems}</List>
+        <List>{fifthListItems}</List>
+        <List>{sixthListItems}</List>
       </Drawer>
-
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
+            {/* Winning Auction */}
+            <Grid item xs={12} md={8} lg={9}>
+             
+            </Grid>
+
+            {/* Recent Deposits */}
+            <Grid item xs={12} md={4} lg={3}>
+              
+            </Grid>
+    
+            
+            {/* Recent Orders */}
+            <Grid item xs={12}>
+            <UserWinningAuction/>
+            </Grid>
+
+            <Grid item xs={12}>
+            <UserAuctions/>
+            </Grid>
+
             
           </Grid>
           <Box pt={4}>
-          <UserWinningAuction/>
-            <BiddingHistory/>
-          
-     
+            <Copyright />
           </Box>
         </Container>
       </main>

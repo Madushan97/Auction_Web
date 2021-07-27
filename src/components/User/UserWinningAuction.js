@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [9, 7,6];
+const cards = [6];
 
 export default function UserAuctions() {
   const classes = useStyles();
@@ -67,11 +67,11 @@ export default function UserAuctions() {
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
-                <Grid item>
+                {/* <Grid item>
                   <Button variant="contained" color="primary">
                     CREATE AUCTION
                   </Button>
-                </Grid>
+                </Grid> */}
                 
               </Grid>
             </div>
@@ -119,17 +119,7 @@ export default function UserAuctions() {
           </Grid>
         </Container>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          {/* Footer */}
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          {/* Something here to give the footer a purpose! */}
-        </Typography>
       
-      </footer>
-      {/* End footer */}
     </React.Fragment>
   );
 }

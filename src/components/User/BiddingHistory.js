@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [9, 7,6];
+const cards = [6];
 
 export default function UserAuctions() {
   const classes = useStyles();

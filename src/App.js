@@ -26,7 +26,7 @@ import UserSideBar from './components/User/UserSideBar'
 import AuctionHomepage from './components/Auction/AuctionHomepage'
 import User_Navbar from './components/User/User_Navbar'
 import UserAuctions from './components/User/UserAuctions'
-import UserDashboard from './components/User/UserDashboard'
+// import UserDashboard from './components/User/UserDashboard'
 import CreateAuctionForm from './components/User/Auction/CreateAuctionForm'
 import CreateAuction from './components/User/Auction/CreateAuction'
 import GemStatus from './components/User/Auction/GemStatus'
@@ -47,7 +47,7 @@ import AccountProfile from './components/Admin_Dashboard/Account/AccountProfile'
 import OpenMenu  from './components/Admin_Dashboard/OpenMenu'
 import Mailer from './components/Feedback/mailer'
 import Composemail from './components/Feedback/Composemail'
-import CreateAuction1 from './components/Extra/CreateAuction1'
+import UserHomePage from './components/User/UserHomePage'
 import Timer from './components/CountDownTimer/Timer'
 import CountDownTimer from './components/CountDownTimer/CountDownTimer'
  
@@ -115,7 +115,7 @@ function App() {
 
           <Route path = '/UserAuctions' component = {UserAuctions}/>
 
-          <Route path = '/UserDashboard' component = {UserDashboard}/>
+          {/* <Route path = '/UserDashboard' component = {UserDashboard}/> */}
 
           <Route path = '/CreateAuctionForm' component = {CreateAuctionForm}/>
         
@@ -157,7 +157,7 @@ function App() {
 
           <Route path = '/Composemail' component = {Composemail}/>
 
-          <Route path = '/CreateAuction1' component = {CreateAuction1}/>
+          <Route path = '/UserHomePage' component = {UserHomePage}/>
 
           <Route path = '/Timer' component = {Timer}/>
 

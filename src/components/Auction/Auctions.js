@@ -116,6 +116,12 @@ export default function Auctions() {
                     </Button>
                     </Link>
 
+                    {/* <Link href='PlaceBid'>
+                    <Button size="small" color="primary">
+                      Manage
+                    </Button>
+                    </Link> */}
+
                     <Link>
                     <Button size="small" color="primary">
                       Rate

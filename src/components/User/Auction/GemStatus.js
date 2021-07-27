@@ -9,6 +9,7 @@ const BootstrapInput = withStyles((theme) => ({
   root: {
     'label + &': {
       marginTop: theme.spacing(3),
+      width: '90ch',
     },
   },
   input: {
@@ -62,6 +63,7 @@ export default function GemStatus() {
           id="demo-customized-select-native"
           value={status}
           onChange={handleChange}
+          
           input={<BootstrapInput />}
         >
           <option aria-label="None" value="" />

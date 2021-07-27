@@ -167,7 +167,7 @@ export default function UserDetails() {
       </div>
 
       <div className='Creat Auction' align = 'center'>
-      <Button variant="contained" color="primary" disableElevation component= {Link} to='/ManageAuctionHomePage'>
+      <Button variant="contained" color="primary" disableElevation component= {Link} to='/Dashboard'>
           <CreateNewFolderRoundedIcon/>
            Create Account
       </Button>
