@@ -22,6 +22,10 @@ import { mainListItems, secondaryListItems, thirdListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
+import SettingsIcon from '@material-ui/icons/Settings';
+import FeedbackIcon from '@material-ui/icons/Feedback';
 
 function Copyright() {
   return (
@@ -145,10 +149,28 @@ export default function Dashboard() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Dashboard
           </Typography>
-          <IconButton color="inherit">
+          
+          
+           {/* feedbacks */}
+           <IconButton  href = '/Composemail' color="inherit">
+              <FeedbackIcon />
+          </IconButton>
+
+          {/* notification button */}
+          <IconButton  color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
             </Badge>
+          </IconButton>
+
+          {/* account setting */}
+          <IconButton  href = '/AccountProfileDetails' color="inherit">
+              <SettingsIcon />
+          </IconButton>
+
+          {/* Logout */}
+          <IconButton  href = '/' color="inherit">
+              <PowerSettingsNewIcon />
           </IconButton>
         </Toolbar>
       </AppBar>

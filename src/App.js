@@ -54,6 +54,7 @@ import LoginPortal from './components/LoginPortal'
 import AdminLoginHomepage from './components/Login/AdminLoginHomepage' 
 import AdminLogin from './components/Login/AdminLogin'
 import Cart from './components/User/Auction/Cart'
+import UserManual from './components/PDF/UserManual'
 
 function App() {
   return (
@@ -173,6 +174,8 @@ function App() {
           <Route path = '/AdminLogin' component = {AdminLogin}/>
 
           <Route path = '/Cart' component = {Cart}/>
+
+          <Route path = '/UserManual' component = {UserManual}/>
 
         </Switch>
         
